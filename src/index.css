@@ -166,19 +166,6 @@ footer {
   .about p {
     font-size: 20px !important;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .skills h1 {
-    font-size: 50px;
-  }
-
-  .skill-icons {
-    font-size: 30px;
-    margin: 5px;
-  }
-}
-@media screen and (max-width: 768px) {
   .hero {
     margin-left: 20px;
     margin-right: 20px;
