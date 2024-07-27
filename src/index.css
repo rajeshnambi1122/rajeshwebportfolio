@@ -178,5 +178,9 @@ footer {
   }
   .projects {
     flex-direction: column;
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+    border: 1px solid #333;
   }
 }
