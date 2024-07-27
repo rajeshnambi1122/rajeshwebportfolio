@@ -1,5 +1,5 @@
 import React from "react";
-import rlogo from "./rlogo.png";
+import rlogo from "./Logo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -9,12 +9,23 @@ const Header = () => {
     <header>
       <nav>
         <div className="nav-left">
-          <img className="rlogo" src={rlogo} alt="rlogo" />
+          <img
+            className="rlogo"
+            src={rlogo}
+            style={{ marginLeft: "8px" }}
+            alt="rlogo"
+          />
         </div>
         <div className="nav-right">
-          <FaLinkedin className="social" role="button" />
-          <FaGithub className="social" />
-          <IoMdMail className="social" />
+          <a href="https://www.linkedin.com/in/rajesh-nambi/">
+            <FaLinkedin className="social" color="white" />
+          </a>
+          <a href="https://github.com/rajeshnambi1122">
+            <FaGithub className="social" color="white" />
+          </a>
+          <a href="mailto:rajeshnambi2016@gmail.com">
+            <IoMdMail className="social" color="white" />
+          </a>
         </div>
       </nav>
     </header>

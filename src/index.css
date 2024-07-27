@@ -6,12 +6,14 @@
 }
 html {
   background-color: papayawhip;
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
 }
+/******** HEADER SECTION **************/
 header {
   background-color: #000;
   color: white;
   height: 60px;
-  border-bottom: 1px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -45,7 +47,7 @@ nav {
   height: 24px;
 }
 
-/* HERO SECTION */
+/******** HERO SECTION *************************/
 .hero {
   font-family: "Zain", sans-serif;
   padding-top: 115px;
@@ -60,18 +62,7 @@ nav {
 .hero p {
   font-size: 40px;
 }
-@media screen and (max-width: 768px) {
-  .hero {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .hero h1 {
-    font-size: 30px;
-  }
-  .hero p {
-    font-size: 20px;
-  }
-}
+
 .pfp {
   width: 90px;
   border-radius: 50%;
@@ -91,6 +82,13 @@ nav {
     opacity: 0;
   }
 }
+/**** ABOUT SECTION ****/
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
 .about h1 {
   font-size: 50px;
   text-align: center;
@@ -98,4 +96,100 @@ nav {
 .about p {
   font-size: 30px;
   text-align: center;
+  padding: 0px 30px;
+}
+
+/********** SKILLS SECTION ************/
+.skills {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #333;
+}
+.skills h1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+.skill-icons {
+  font-size: 60px;
+  margin: 20px;
+}
+/********** PROJECTS SECTION ************/
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.projectbox {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  border: 1px solid #333;
+}
+.projectimage {
+  max-width: 100%;
+  max-height: 100%;
+}
+.projectname {
+  margin-left: 5px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/********** FOOTER SECTION ************/
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .skills h1 {
+    font-size: 50px;
+  }
+
+  .skill-icons {
+    font-size: 40px;
+    margin: 10px;
+  }
+  .about p {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills h1 {
+    font-size: 50px;
+  }
+
+  .skill-icons {
+    font-size: 30px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero p {
+    font-size: 30px;
+  }
+  .projects {
+    flex-direction: column;
+  }
 }
