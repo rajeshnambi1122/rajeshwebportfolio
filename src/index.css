@@ -178,22 +178,22 @@ footer {
   }
   .projects {
     flex-direction: column;
-  }
-  .hero {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .hero h1 {
-    font-size: 40px;
-  }
-  .hero p {
-    font-size: 30px;
-  }
-  .projects {
-    flex-direction: column;
-  }
-  .projectbox {
-    width: 320px;
-    height: 400px;
+    .hero {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .hero h1 {
+      font-size: 40px;
+    }
+    .hero p {
+      font-size: 30px;
+    }
+    .projects {
+      flex-direction: column;
+    }
+    .projectbox {
+      width: 350px;
+      height: 400px;
+    }
   }
 }
