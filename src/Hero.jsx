@@ -10,26 +10,24 @@ const Hero = ({ skillsRef, aboutRef, projectsRef, scrollToSection }) => {
       <h1 className="animate__animated animate__tada">Rajesh Nambi</h1>
       <p className="heroabout"> A Frontend Developer</p>
       <div className="buttons">
-        <a>
-          <Button
-            onClick={() => scrollToSection(aboutRef)}
-            variant="text"
-            sx={{
-              color: "white",
+        <Button
+          onClick={() => scrollToSection(aboutRef)}
+          variant="text"
+          sx={{
+            color: "white",
+            borderColor: "white",
+            backgroundColor: "black",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+            margin: "8px",
+            "&:hover": {
               borderColor: "white",
-              backgroundColor: "black",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-              margin: "8px",
-              "&:hover": {
-                borderColor: "white",
-                backgroundColor: "papayawhip",
-                color: "black",
-              },
-            }}
-          >
-            About
-          </Button>
-        </a>
+              backgroundColor: "papayawhip",
+              color: "black",
+            },
+          }}
+        >
+          About
+        </Button>
         <Button
           variant="text"
           onClick={() => scrollToSection(skillsRef)}
