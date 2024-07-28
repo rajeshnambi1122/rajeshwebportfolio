@@ -3,10 +3,11 @@ import rlogo from "./Logo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import "animate.css";
 
 const Header = () => {
   return (
-    <header>
+    <header class="animate__animated animate__fadeInDown animate__delay-1s">
       <nav>
         <div className="nav-left">
           <img
