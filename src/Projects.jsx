@@ -4,11 +4,11 @@ import Keeper from "./Keeper.png";
 import { GoLinkExternal } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 
-const Projects = () => {
+const Projects = ({ projectsRef }) => {
   return (
     <div>
       <h1>My Projects</h1>
-      <div className="projects">
+      <div ref={projectsRef} className="projects">
         <div className="projectbox">
           <img className="projectimage" src={SLstudio} alt="SL Studio"></img>
           <h2 className="projectname">SL Studio</h2>

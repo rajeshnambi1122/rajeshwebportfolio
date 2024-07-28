@@ -3,15 +3,16 @@ import pfp from "./pfp.jpg";
 import { Button } from "@mui/material";
 import "animate.css";
 
-const Hero = () => {
+const Hero = ({ skillsRef, aboutRef, projectsRef, scrollToSection }) => {
   return (
     <div className="hero">
       <img src={pfp} className="pfp" alt="Profile"></img>
       <h1 className="animate__animated animate__tada">Rajesh Nambi</h1>
       <p className="heroabout"> A Frontend Developer</p>
       <div className="buttons">
-        <a href="#about">
+        <a>
           <Button
+            onClick={() => scrollToSection(aboutRef)}
             variant="text"
             sx={{
               color: "white",
@@ -31,6 +32,7 @@ const Hero = () => {
         </a>
         <Button
           variant="text"
+          onClick={() => scrollToSection(skillsRef)}
           sx={{
             color: "white",
             borderColor: "white",
@@ -48,6 +50,7 @@ const Hero = () => {
         </Button>
         <Button
           variant="text"
+          onClick={() => scrollToSection(projectsRef)}
           sx={{
             color: "white",
             borderColor: "white",

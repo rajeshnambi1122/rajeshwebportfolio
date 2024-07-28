@@ -3,9 +3,9 @@ import pfp1 from "./pfp.jpg";
 import { Button } from "@mui/material";
 import { IoMdDocument } from "react-icons/io";
 
-function About() {
+const About = ({ aboutRef }) => {
   return (
-    <div className="about">
+    <div ref={aboutRef} className="about">
       <h1>About Me</h1>
       <p>Welcome to My Portfolio!</p>
       <img
@@ -70,6 +70,6 @@ function About() {
       </Button>
     </div>
   );
-}
+};
 
 export default About;

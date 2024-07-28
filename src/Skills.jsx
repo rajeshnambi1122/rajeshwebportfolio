@@ -22,9 +22,9 @@ import {
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
-const Skills = () => {
+const Skills = ({ skillsRef }) => {
   return (
-    <div className="skills">
+    <div id="skills" className="skills" ref={skillsRef}>
       <h1>My Skills</h1>
       <div className="skillbox">
         <FaHtml5 className="skill-icons" />

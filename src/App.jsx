@@ -5,18 +5,32 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import "animate.css";
 import Footer from "./Footer";
+import { useRef } from "react";
 
-function App() {
+const App = () => {
+  const skillsRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      <Hero
+        skillsRef={skillsRef}
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        scrollToSection={scrollToSection}
+      />
+      <About aboutRef={aboutRef} />
+      <Skills skillsRef={skillsRef} />
+      <Projects projectsRef={projectsRef} />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
