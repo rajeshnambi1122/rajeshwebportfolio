@@ -50,24 +50,30 @@ const About = ({ aboutRef }) => {
       </p>
 
       <div></div>
-      <Button
-        variant="text"
-        sx={{
-          color: "white",
-          borderColor: "white",
-          backgroundColor: "black",
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-          margin: "8px",
-          "&:hover": {
-            borderColor: "white",
-            backgroundColor: "papayawhip",
-            color: "black",
-          },
-        }}
+      <a
+        href="https://drive.google.com/file/d/11MnrArtOdpwGA6v8lSRrTwVPGtCUkxSi/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <IoMdDocument style={{ fontSize: "30px", marginRight: "5px" }} />
-        VIEW RESUME
-      </Button>
+        <Button
+          variant="text"
+          sx={{
+            color: "white",
+            borderColor: "white",
+            backgroundColor: "black",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+            margin: "8px",
+            "&:hover": {
+              borderColor: "white",
+              backgroundColor: "papayawhip",
+              color: "black",
+            },
+          }}
+        >
+          <IoMdDocument style={{ fontSize: "30px", marginRight: "5px" }} />
+          VIEW RESUME
+        </Button>
+      </a>
     </div>
   );
 };
