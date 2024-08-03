@@ -3,6 +3,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Education from "./Education";
 import "animate.css";
 import Footer from "./Footer";
 import { useRef } from "react";
@@ -28,6 +29,7 @@ const App = () => {
       <About aboutRef={aboutRef} />
       <Skills skillsRef={skillsRef} />
       <Projects projectsRef={projectsRef} />
+      <Education />
       <Footer />
     </div>
   );

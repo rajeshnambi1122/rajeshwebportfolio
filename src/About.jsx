@@ -1,5 +1,5 @@
 import React from "react";
-import pfp1 from "./pfp.jpg";
+import pfp1 from "./public/pfp.jpg";
 import { Button } from "@mui/material";
 import { IoMdDocument } from "react-icons/io";
 

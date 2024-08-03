@@ -1,5 +1,5 @@
 import React from "react";
-import rlogo from "./Logo.png";
+import rlogo from "./public/rlogo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";

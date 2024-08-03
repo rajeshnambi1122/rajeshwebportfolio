@@ -1,5 +1,5 @@
 import React from "react";
-import pfp from "./pfp.jpg";
+import pfp from "./public/pfp.jpg";
 import { Button } from "@mui/material";
 import "animate.css";
 
@@ -66,6 +66,24 @@ const Hero = ({ skillsRef, aboutRef, projectsRef, scrollToSection }) => {
             }}
           >
             Projects
+          </Button>
+          <Button
+            variant="text"
+            onClick={() => scrollToSection(projectsRef)}
+            sx={{
+              color: "white",
+              borderColor: "white",
+              backgroundColor: "black",
+              boxShadow: "0 6px 20px rgba(0, 0, 0, 0.19)",
+              margin: "8px",
+              "&:hover": {
+                borderColor: "white",
+                backgroundColor: "papayawhip",
+                color: "black",
+              },
+            }}
+          >
+            Education
           </Button>
         </div>
       </div>

@@ -142,6 +142,15 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+/********** EDUCATION SECTION **********/
+.Education {
+  text-align: center;
+  margin: 20px;
+}
+.graduate {
+  font-size: 40px;
+}
 /********** FOOTER SECTION ************/
 footer {
   background-color: #000;

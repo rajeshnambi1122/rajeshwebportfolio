@@ -1,6 +1,6 @@
 import React from "react";
-import SLstudio from "./SLstudio.png";
-import Keeper from "./Keeper.png";
+import SLstudio from "./public/SLstudio.png";
+import Keeper from "./public/Keeper.png";
 import { GoLinkExternal } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 
@@ -66,7 +66,6 @@ const Projects = ({ projectsRef }) => {
             <FaGithub />{" "}
             <a href="https://github.com/rajeshnambi1122/keeper-vire">Code</a>
           </p>
-
           <p
             style={{
               display: "inline-block",
@@ -77,6 +76,7 @@ const Projects = ({ projectsRef }) => {
             <a href="https://rajeshnambi1122.github.io/keeper-vire/">Live</a>
           </p>
           <GoLinkExternal />
+          ``
         </div>
       </div>
     </div>
