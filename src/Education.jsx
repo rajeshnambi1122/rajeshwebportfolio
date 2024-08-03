@@ -4,7 +4,7 @@ import Coursera from "./public/Coursera.jpeg";
 import { SiCoursera, SiUdemy } from "react-icons/si";
 import { FaUserGraduate } from "react-icons/fa";
 
-const Education = ({}) => {
+const Education = () => {
   return (
     <div className="Education">
       <h1>My Education</h1>
