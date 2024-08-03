@@ -12,6 +12,7 @@ const App = () => {
   const skillsRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
+  const educationRef = useRef(null);
   const scrollToSection = (ref) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
@@ -24,12 +25,13 @@ const App = () => {
         skillsRef={skillsRef}
         aboutRef={aboutRef}
         projectsRef={projectsRef}
+        educationRef={educationRef}
         scrollToSection={scrollToSection}
       />
       <About aboutRef={aboutRef} />
       <Skills skillsRef={skillsRef} />
       <Projects projectsRef={projectsRef} />
-      <Education />
+      <Education educationRef={educationRef} />
       <Footer />
     </div>
   );

@@ -4,9 +4,9 @@ import Coursera from "./public/Coursera.jpeg";
 import { SiCoursera, SiUdemy } from "react-icons/si";
 import { FaUserGraduate } from "react-icons/fa";
 
-const Education = () => {
+const Education = ({ educationRef }) => {
   return (
-    <div className="Education">
+    <div ref={educationRef} className="Education">
       <h1>My Education</h1>
       <FaUserGraduate className="graduate" />
       <h2>B.A Economics</h2>
