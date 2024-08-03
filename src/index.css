@@ -81,6 +81,7 @@ nav {
     opacity: 0;
   }
 }
+
 /**** ABOUT SECTION ****/
 .about {
   display: flex;
@@ -114,12 +115,14 @@ nav {
   font-size: 60px;
   margin: 20px;
 }
+
 /********** PROJECTS SECTION ************/
 .projects {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid #333;
 }
 h1 {
   font-size: 50px;
@@ -151,6 +154,7 @@ a {
 .graduate {
   font-size: 40px;
 }
+
 /********** FOOTER SECTION ************/
 footer {
   background-color: #000;
