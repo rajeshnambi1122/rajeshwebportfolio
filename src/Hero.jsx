@@ -3,7 +3,13 @@ import pfp from "./public/pfp.jpg";
 import { Button } from "@mui/material";
 import "animate.css";
 
-const Hero = ({ skillsRef, aboutRef, projectsRef, scrollToSection }) => {
+const Hero = ({
+  skillsRef,
+  aboutRef,
+  projectsRef,
+  educationRef,
+  scrollToSection,
+}) => {
   return (
     <div class="animate__animated animate__fadeInDown animate__delay-2s">
       <div className="hero">
@@ -69,7 +75,7 @@ const Hero = ({ skillsRef, aboutRef, projectsRef, scrollToSection }) => {
           </Button>
           <Button
             variant="text"
-            onClick={() => scrollToSection(projectsRef)}
+            onClick={() => scrollToSection(educationRef)}
             sx={{
               color: "white",
               borderColor: "white",
