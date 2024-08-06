@@ -13,10 +13,11 @@ header {
   background-color: #000;
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 5px;
+  width: 100%;
   z-index: 1;
-  margin: 5px 5px;
+  margin: 0px 5px;
   border-radius: 25px;
 }
 .rlogo {
