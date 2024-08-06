@@ -76,7 +76,6 @@ const Projects = ({ projectsRef }) => {
             <a href="https://rajeshnambi1122.github.io/keeper-vire/">Live</a>
           </p>
           <GoLinkExternal />
-          ``
         </div>
       </div>
     </div>

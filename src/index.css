@@ -52,6 +52,18 @@ nav {
   width: 24px;
   height: 24px;
 }
+.custom-button {
+  color: white;
+  background-color: black;
+  border-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:hover {
+  border-color: white;
+  background-color: papayawhip;
+  color: black;
+}
 
 /******** HERO SECTION *************************/
 .hero {
@@ -154,7 +166,6 @@ a {
 
 /********** EDUCATION SECTION **********/
 .Education {
-  text-align: center;
   margin: 20px;
 }
 .graduate {
