@@ -33,6 +33,7 @@ const Hero = ({
                 backgroundColor: "papayawhip",
                 color: "black",
               },
+              borderRadius: "25px",
             }}
           >
             About
@@ -51,6 +52,7 @@ const Hero = ({
                 backgroundColor: "papayawhip",
                 color: "black",
               },
+              borderRadius: "25px",
             }}
           >
             Skills
@@ -69,6 +71,7 @@ const Hero = ({
                 backgroundColor: "papayawhip",
                 color: "black",
               },
+              borderRadius: "25px",
             }}
           >
             Projects
@@ -87,6 +90,7 @@ const Hero = ({
                 backgroundColor: "papayawhip",
                 color: "black",
               },
+              borderRadius: "25px",
             }}
           >
             Education
