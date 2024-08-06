@@ -49,12 +49,11 @@ const Education = ({ educationRef }) => {
           <img className="projectimage" src={Coursera} alt="Certficates"></img>
           <h2 className="projectname">Introduction to Generative AI</h2>
           <p style={{ padding: "5px" }}>
-            I recently completed the 'Introduction to Generative AI' course by
+            I have completed the 'Introduction to Generative AI' course by
             Google Cloud, where I explored the fundamentals of generative AI,
             including its applications and underlying principles. This course
             provided me with a solid foundation in understanding how AI can
-            create new content, enhancing my skill set in the evolving tech
-            landscape.
+            create new content. I am very much interested in AI & LLM.
           </p>
           <p
             style={{
