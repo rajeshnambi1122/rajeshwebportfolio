@@ -68,9 +68,15 @@ const About = ({ aboutRef }) => {
               backgroundColor: "papayawhip",
               color: "black",
             },
+            borderRadius: "25px",
           }}
         >
-          <IoMdDocument style={{ fontSize: "30px", marginRight: "5px" }} />
+          <IoMdDocument
+            style={{
+              fontSize: "30px",
+              marginRight: "5px",
+            }}
+          />
           VIEW RESUME
         </Button>
       </a>
