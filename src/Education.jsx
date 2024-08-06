@@ -21,12 +21,14 @@ const Education = ({ educationRef }) => {
             The Complete Web Developer Bootcamp 2024
           </h2>
           <p style={{ padding: "5px" }}>
-            I honed my web development skills through 'The Complete 2024 Web
-            Development Bootcamp' by Dr. Angela Yu, where I covered the
-            fundamentals of HTML, CSS, and JavaScript, along with modern
-            frameworks and tools. This intensive 61.5-hour course provided me
-            with hands-on experience and the ability to build responsive,
-            dynamic web applications.
+            I recently completed 'The Complete 2024 Web Development Bootcamp' by
+            Dr. Angela Yu, where I gained comprehensive knowledge in both
+            front-end and back-end development. The course covered advanced
+            topics like Node.js, Express, and SQL, as well as building dynamic,
+            responsive web applications using HTML, CSS, JavaScript, and React.
+            This 61.5-hour intensive training has equipped me with the skills to
+            create full-stack web applications and confidently tackle real-world
+            development challenges.
           </p>
           <p
             style={{
