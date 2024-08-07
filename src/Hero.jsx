@@ -27,9 +27,7 @@ const Hero = ({
     <div class="animate__animated animate__fadeInDown animate__delay-2s">
       <div className="hero">
         <img src={pfp} className="pfp" alt="Profile"></img>
-        <h1 className="animate__animated animate__pulse animate__infinite">
-          Rajesh Nambi
-        </h1>
+        <h1>Rajesh Nambi</h1>
         <p className="heroabout"> A Frontend Developer</p>
         <div className="buttons">
           <Button

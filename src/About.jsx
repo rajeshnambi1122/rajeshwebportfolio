@@ -1,5 +1,5 @@
 import React from "react";
-import pfp1 from "./public/pfp.jpg";
+import pfp1 from "./public/me.jpg";
 import { Button } from "@mui/material";
 import { IoMdDocument } from "react-icons/io";
 
@@ -13,8 +13,7 @@ const About = ({ aboutRef }) => {
         alt="Profile"
         style={{
           width: "200px",
-          height: "200px",
-          borderRadius: "50%",
+          borderRadius: "25px",
           objectFit: "cover",
         }}
       />
