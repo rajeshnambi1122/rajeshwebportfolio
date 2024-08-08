@@ -50,7 +50,7 @@ const About = ({ aboutRef }) => {
 
       <div></div>
       <a
-        href="https://drive.google.com/file/d/11MnrArtOdpwGA6v8lSRrTwVPGtCUkxSi/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1p0HYrL622K_QU2DIaaz3WX3FuU3ThvZV/view"
         target="_blank"
         rel="noopener noreferrer"
       >
