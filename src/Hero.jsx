@@ -28,7 +28,7 @@ const Hero = ({
       <div className="hero">
         <img src={pfp} className="pfp" alt="Profile"></img>
         <h1>Rajesh Nambi</h1>
-        <p className="heroabout"> A Frontend Developer</p>
+        <p className="heroabout"> A Software Engineer</p>
         <div className="buttons">
           <Button
             onClick={() => scrollToSection(aboutRef)}
