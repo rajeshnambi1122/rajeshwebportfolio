@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tribute = ({}) => {
+const Tribute = () => {
   return <div></div>;
 };
 
