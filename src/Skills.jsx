@@ -19,6 +19,7 @@ import {
   SiExpress,
   SiMongodb,
   SiPostman,
+  SiAngular,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -32,6 +33,7 @@ const Skills = ({ skillsRef }) => {
         <FaJs className="skill-icons" />
         <SiJquery className="skill-icons" />
         <SiTypescript className="skill-icons" />
+        <SiAngular className="skill-icons" />
         <FaReact className="skill-icons" />
         <SiVite className="skill-icons" />
         <SiRedux className="skill-icons" />
