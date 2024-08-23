@@ -14,12 +14,12 @@ import {
   SiJquery,
   SiBootstrap,
   SiTypescript,
+  SiAngular,
   SiRedux,
   SiVite,
   SiExpress,
   SiMongodb,
   SiPostman,
-  SiAngular,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
