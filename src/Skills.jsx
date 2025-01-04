@@ -3,6 +3,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
+  FaPython,
   FaReact,
   FaNodeJs,
   FaGitAlt,
@@ -20,6 +21,10 @@ import {
   SiExpress,
   SiMongodb,
   SiPostman,
+  SiFlutter,
+  SiVuedotjs,
+  SiMysql,
+  SiAndroidstudio,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -31,22 +36,27 @@ const Skills = ({ skillsRef }) => {
         <FaHtml5 className="skill-icons" />
         <FaCss3Alt className="skill-icons" />
         <FaJs className="skill-icons" />
+        <FaPython className="skill-icons" />
         <SiJquery className="skill-icons" />
         <SiTypescript className="skill-icons" />
         <SiAngular className="skill-icons" />
+        <SiVuedotjs className="skill-icons" />
         <FaReact className="skill-icons" />
         <SiVite className="skill-icons" />
         <SiRedux className="skill-icons" />
+        <SiFlutter className="skill-icons" />
         <SiBootstrap className="skill-icons" />
         <SiTailwindcss className="skill-icons" />
         <SiMui className="skill-icons" />
         <FaNodeJs className="skill-icons" />
         <FaNpm className="skill-icons" />
         <SiExpress className="skill-icons" />
+        <SiMysql className="skill-icons" />
         <SiMongodb className="skill-icons" />
         <SiPostman className="skill-icons" />
         <FaGitAlt className="skill-icons" />
         <VscVscode className="skill-icons" />
+        <SiAndroidstudio className="skill-icons" />
       </div>
       <h2 style={{ textAlign: "center", margin: "20px" }}>
         & Also Learning More.....

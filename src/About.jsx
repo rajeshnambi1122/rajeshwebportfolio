@@ -25,12 +25,14 @@ const About = ({ aboutRef }) => {
           margin: "10px 0",
         }}
       >
-        Enthusiastic and dedicated Frontend Developer with a solid foundation in
-        React, HTML, CSS, and JavaScript. A recent graduate with a Bachelor's
-        degree in Economics, I am passionate about creating visually appealing,
-        responsive, and user-friendly web applications. My experience includes
-        developing and maintaining websites and web applications, with a keen
-        eye for detail and a commitment to delivering high-quality work.
+        Proficient in front-end web development technologies including HTML,
+        CSS, JavaScript, React, Angular, and Vue, with additional experience in
+        React Native and Flutter for mobile app development. Skilled in creating
+        responsive, user-friendly web applications and experienced in Node.js,
+        Express, and SQL through the completion of The Complete 2024 Web
+        Development Bootcamp. Passionate about learning new technologies and
+        contributing to impactful web development projects. Open to relocation
+        and eager to tackle new challenges.
       </p>
       <p
         style={{
@@ -50,7 +52,7 @@ const About = ({ aboutRef }) => {
 
       <div></div>
       <a
-        href="https://drive.google.com/file/d/1p0HYrL622K_QU2DIaaz3WX3FuU3ThvZV/view"
+        href="https://drive.google.com/file/d/1tlXdRhhqsdXq8Vuh8pzYsRpf_vk3b7pB/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
