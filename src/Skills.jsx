@@ -25,6 +25,7 @@ import {
   SiVuedotjs,
   SiMysql,
   SiAndroidstudio,
+  SiFigma,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -56,6 +57,7 @@ const Skills = ({ skillsRef }) => {
         <SiPostman className="skill-icons" />
         <FaGitAlt className="skill-icons" />
         <VscVscode className="skill-icons" />
+        <SiFigma className="skill-icons" />
         <SiAndroidstudio className="skill-icons" />
       </div>
       <h2 style={{ textAlign: "center", margin: "20px" }}>
