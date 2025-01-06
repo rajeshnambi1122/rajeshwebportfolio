@@ -25,14 +25,14 @@ const About = ({ aboutRef }) => {
           margin: "10px 0",
         }}
       >
-        Proficient in front-end web development technologies including HTML,
-        CSS, JavaScript, React, Angular, and Vue, with additional experience in
-        React Native and Flutter for mobile app development. Skilled in creating
-        responsive, user-friendly web applications and experienced in Node.js,
-        Express, and SQL through the completion of The Complete 2024 Web
-        Development Bootcamp. Passionate about learning new technologies and
-        contributing to impactful web development projects. Open to relocation
-        and eager to tackle new challenges.
+        A motivated full-stack developer with expertise in front-end
+        technologies like HTML, CSS, JavaScript, React, Angular, and Vue, along
+        with experience in React Native and Flutter for mobile app development.
+        Proficient in Python, as well as backend technologies such as Node.js,
+        Express, and SQL. Skilled in creating responsive, user-friendly web
+        applications and delivering solutions that blend functionality and
+        aesthetics. Passionate about learning new technologies, contributing to
+        impactful projects, and open to relocation to embrace new challenges.
       </p>
       <p
         style={{
