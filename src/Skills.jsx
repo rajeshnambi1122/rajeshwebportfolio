@@ -8,7 +8,9 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaNpm,
+  FaFigma,
 } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa6";
 import {
   SiTailwindcss,
   SiMui,
@@ -57,7 +59,7 @@ const Skills = ({ skillsRef }) => {
         <SiPostman className="skill-icons" />
         <FaGitAlt className="skill-icons" />
         <VscVscode className="skill-icons" />
-        <SiFigma className="skill-icons" />
+        <FaFigma className="skill-icons" />
         <SiAndroidstudio className="skill-icons" />
       </div>
       <h2 style={{ textAlign: "center", margin: "20px" }}>
