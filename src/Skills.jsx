@@ -50,7 +50,6 @@ const Skills = ({ skillsRef }) => {
         <SiBootstrap className="skill-icons" />
         <SiTailwindcss className="skill-icons" />
         <SiMui className="skill-icons" />
-        <SiFlutter className="skill-icons" />
         <FaNodeJs className="skill-icons" />
         <FaNpm className="skill-icons" />
         <SiExpress className="skill-icons" />
