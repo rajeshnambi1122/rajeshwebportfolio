@@ -22,11 +22,9 @@ import {
   SiExpress,
   SiMongodb,
   SiPostman,
-  SiFlutter,
   SiVuedotjs,
   SiMysql,
   SiAndroidstudio,
-  SiFigma,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
