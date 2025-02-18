@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Education from "./Education";
-import Tribute from "./Tribute";
+import Heatmap from "./Heatmap";
 import Footer from "./Footer";
 import { useRef } from "react";
 
@@ -33,7 +33,7 @@ const App = () => {
       <Skills skillsRef={skillsRef} />
       <Projects projectsRef={projectsRef} />
       <Education educationRef={educationRef} />
-      <Tribute />
+      <Heatmap />
       <Footer />
     </div>
   );

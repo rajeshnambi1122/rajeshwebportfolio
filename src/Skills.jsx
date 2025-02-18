@@ -8,7 +8,6 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaNpm,
-  FaFigma,
 } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
 import {
