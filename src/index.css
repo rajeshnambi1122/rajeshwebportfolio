@@ -127,8 +127,9 @@ nav {
 }
 .skills h1 {
   margin-bottom: 50px;
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
+  font-weight: bold;
 }
 .skill-icons {
   font-size: 60px;
@@ -144,8 +145,10 @@ nav {
   border-bottom: 1px solid #333;
 }
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
+  font-weight: bold;
+  margin: 40px 0;
 }
 .projectbox {
   width: 400px;
@@ -231,5 +234,8 @@ footer {
     .projectbox {
       width: 320px;
     }
+  }
+  h1 {
+    font-size: 50px;
   }
 }

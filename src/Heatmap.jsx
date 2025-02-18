@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
 import { Tooltip } from "react-tooltip";
+import { FaGithub } from "react-icons/fa";
 
 const Heatmap = () => {
   const [values, setValues] = useState([]);
@@ -26,81 +27,101 @@ const Heatmap = () => {
   }, [currentYear]);
 
   return (
-    <div style={{ maxWidth: "100%", padding: "5px" }}>
-      <h2
-        style={{
-          marginBottom: "5px",
-          textAlign: "center",
-          lineHeight: "1.2",
-        }}
-      >
-        GitHub Contributions
-      </h2>
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        padding: "20px",
+        boxSizing: "border-box",
+      }}
+    >
       <div
         style={{
-          fontSize: "6px",
-          overflowX: "auto",
-          padding: "2px",
-          margin: "10px",
+          background: "white",
+          borderRadius: "15px",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          padding: "20px",
+          maxWidth: "800px",
+          width: "90%",
+          margin: "20px 0",
         }}
       >
-        <CalendarHeatmap
-          startDate={new Date(currentYear, 0, 1)}
-          endDate={new Date()}
-          values={values}
-          classForValue={(value) => {
-            if (!value) return "color-empty";
-            return `color-scale-${Math.min(4, Math.floor(value.count / 3))}`;
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "10px",
+            marginBottom: "15px",
           }}
-          tooltipDataAttrs={(value) => ({
-            "data-tooltip-id": "github-tooltip",
-            "data-tooltip-content": value?.date
-              ? `${value.date}: ${value.count} contributions`
-              : "No contributions",
-          })}
-          showMonthLabels={true}
-          showWeekdayLabels={false}
-          gutterSize={1}
-        />
-      </div>
-      <Tooltip id="github-tooltip" />
-      <style>{`
-        .react-calendar-heatmap {
-          font-size: 4px;
-          width: 300px;
-        }
-        .react-calendar-heatmap rect {
-          width: 6px;
-          height: 6px;
-          rx: 1px;
-          ry: 1px;
-        }
-        .react-calendar-heatmap text {
-          font-size: 4px;
-        }
-        @media (max-width: 768px) {
+        >
+          <FaGithub style={{ fontSize: "2rem", color: "#333" }} />
+          <h2
+            style={{
+              fontSize: "1.5rem",
+              color: "#333",
+              margin: 0,
+            }}
+          >
+            GitHub Contributions
+          </h2>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            overflow: "hidden",
+          }}
+        >
+          <CalendarHeatmap
+            startDate={new Date(currentYear, 0, 1)}
+            endDate={new Date()}
+            values={values}
+            classForValue={(value) => {
+              if (!value) return "color-empty";
+              return `color-scale-${Math.min(4, Math.floor(value.count / 3))}`;
+            }}
+            tooltipDataAttrs={(value) => ({
+              "data-tooltip-id": "github-tooltip",
+              "data-tooltip-content": value?.date
+                ? `${value.date}: ${value.count} contributions`
+                : "No contributions",
+            })}
+            showMonthLabels={true}
+            showWeekdayLabels={false}
+            gutterSize={1}
+          />
+        </div>
+        <Tooltip id="github-tooltip" />
+        <style>{`
+          .react-calendar-heatmap {
+            width: 100% !important;
+            height: auto;
+          }
           .react-calendar-heatmap rect {
-            width: 3px !important;
-            height: 3px !important;
+            width: 8px;
+            height: 8px;
           }
-            .react-calendar-heatmap {
-          font-size: 4px;
-          width: 200px;
-        }
           .react-calendar-heatmap text {
-            font-size: 3px;
+            font-size: 6px;
           }
-          h2 {
-            font-size: 0.8rem !important;
+          @media (max-width: 768px) {
+            .react-calendar-heatmap rect {
+              width: 4px !important;
+              height: 4px !important;
+            }
+            .react-calendar-heatmap text {
+              font-size: 4px;
+            }
           }
-        }
-        .color-empty { fill: #ebedf0; }
-        .color-scale-0 { fill: #ebedf0; }
-        .color-scale-1 { fill: #7bc96f; }
-        .color-scale-2 { fill: #239a3b; }
-        .color-scale-3 { fill: #196127; }
-        .color-scale-4 { fill: #0d2c1a; }
-      `}</style>
+          .color-empty { fill: #ebedf0; }
+          .color-scale-0 { fill: #ebedf0; }
+          .color-scale-1 { fill: #7bc96f; }
+          .color-scale-2 { fill: #239a3b; }
+          .color-scale-3 { fill: #196127; }
+          .color-scale-4 { fill: #0d2c1a; }
+        `}</style>
+      </div>
     </div>
   );
 };
