@@ -36,7 +36,14 @@ const Heatmap = () => {
       >
         GitHub Contributions
       </h2>
-      <div style={{ fontSize: "6px", overflowX: "auto", padding: "2px" }}>
+      <div
+        style={{
+          fontSize: "6px",
+          overflowX: "auto",
+          padding: "2px",
+          margin: "10px",
+        }}
+      >
         <CalendarHeatmap
           startDate={new Date(currentYear, 0, 1)}
           endDate={new Date()}
@@ -78,7 +85,7 @@ const Heatmap = () => {
           }
             .react-calendar-heatmap {
           font-size: 4px;
-          width: 100px;
+          width: 200px;
         }
           .react-calendar-heatmap text {
             font-size: 3px;
