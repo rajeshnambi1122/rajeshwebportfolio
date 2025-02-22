@@ -99,11 +99,20 @@ const Heatmap = () => {
             height: auto;
           }
           .react-calendar-heatmap rect {
-            width: 8px;
-            height: 8px;
+            width: 15px;
+            height: 15px;
           }
           .react-calendar-heatmap text {
-            font-size: 6px;
+            font-size: 12px;
+          }
+          @media (min-width: 1024px) {
+            .react-calendar-heatmap rect {
+              width: 11px;
+              height: 11px;
+            }
+            .react-calendar-heatmap text {
+              font-size: 9px;
+            }
           }
           @media (max-width: 768px) {
             .react-calendar-heatmap rect {
@@ -116,10 +125,10 @@ const Heatmap = () => {
           }
           .color-empty { fill: #ebedf0; }
           .color-scale-0 { fill: #ebedf0; }
-          .color-scale-1 { fill: #7bc96f; }
-          .color-scale-2 { fill: #239a3b; }
-          .color-scale-3 { fill: #196127; }
-          .color-scale-4 { fill: #0d2c1a; }
+          .color-scale-1 { fill: #9be9a8; }
+          .color-scale-2 { fill: #40c463; }
+          .color-scale-3 { fill: #30a14e; }
+          .color-scale-4 { fill: #216e39; }
         `}</style>
       </div>
     </div>
