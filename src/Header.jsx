@@ -7,8 +7,8 @@ import "animate.css";
 
 const Header = () => {
   return (
-    <header class="animate__animated animate__fadeInDown animate__delay-1s">
-      <nav>
+    <header className="animate__animated animate__fadeInDown animate__delay-1s">
+      <nav className="desktop-nav">
         <div className="nav-left">
           <img
             className="rlogo"
@@ -18,14 +18,14 @@ const Header = () => {
           />
         </div>
         <div className="nav-right">
-          <a href="https://www.linkedin.com/in/rajesh-nambi/">
-            <FaLinkedin className="social" color="white" />
+          <a href="https://www.linkedin.com/in/rajesh-nambi/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="social desktop-social" color="white" />
           </a>
-          <a href="https://github.com/rajeshnambi1122">
-            <FaGithub className="social" color="white" />
+          <a href="https://github.com/rajeshnambi1122" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="social desktop-social" color="white" />
           </a>
           <a href="mailto:rajeshnambi2016@gmail.com">
-            <IoMdMail className="social" color="white" />
+            <IoMdMail className="social desktop-social" color="white" />
           </a>
         </div>
       </nav>

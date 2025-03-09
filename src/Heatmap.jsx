@@ -42,7 +42,7 @@ const Heatmap = () => {
           borderRadius: "15px",
           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
           padding: "20px",
-          maxWidth: "800px",
+          maxWidth: "400px",
           width: "90%",
           margin: "20px 0",
         }}
@@ -107,11 +107,20 @@ const Heatmap = () => {
           }
           @media (min-width: 1024px) {
             .react-calendar-heatmap rect {
-              width: 11px;
-              height: 11px;
+              width: 8px;
+              height: 8px;
             }
             .react-calendar-heatmap text {
-              font-size: 9px;
+              font-size: 8px;
+            }
+          }
+          @media (min-width: 769px) and (max-width: 1023px) {
+            .react-calendar-heatmap rect {
+              width: 9px;
+              height: 9px;
+            }
+            .react-calendar-heatmap text {
+              font-size: 8px;
             }
           }
           @media (max-width: 768px) {

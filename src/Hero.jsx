@@ -16,6 +16,8 @@ const Hero = ({
     backgroundColor: "black",
     boxShadow: "0 6px 20px rgba(0, 0, 0, 0.19)",
     margin: "8px",
+    padding: "6px 16px",
+    minWidth: "120px",
     "&:hover": {
       borderColor: "white",
       backgroundColor: "papayawhip",
@@ -24,7 +26,7 @@ const Hero = ({
     borderRadius: "25px",
   };
   return (
-    <div class="animate__animated animate__fadeInDown animate__delay-2s">
+    <div className="animate__animated animate__fadeInDown animate__delay-2s">
       <div className="hero">
         <img src={pfp} className="pfp" alt="Profile"></img>
         <h1>Rajesh Nambi</h1>
