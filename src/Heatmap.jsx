@@ -79,7 +79,10 @@ const Heatmap = () => {
             values={values}
             classForValue={(value) => {
               if (!value) return "color-empty";
-              return `color-scale-${Math.min(4, Math.floor(value.count / 3))}`;
+              if (value.count === 1) return "color-scale-1";
+              if (value.count === 2) return "color-scale-2";
+              if (value.count <= 4) return "color-scale-3";
+              return "color-scale-4";
             }}
             tooltipDataAttrs={(value) => ({
               "data-tooltip-id": "github-tooltip",
