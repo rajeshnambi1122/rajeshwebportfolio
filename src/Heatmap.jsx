@@ -78,7 +78,7 @@ const Heatmap = () => {
             endDate={new Date()}
             values={values}
             classForValue={(value) => {
-              if (!value) return "color-empty";
+              if (!value || value.count === 0) return "color-empty";
               if (value.count === 1) return "color-scale-1";
               if (value.count === 2) return "color-scale-2";
               if (value.count <= 4) return "color-scale-3";
@@ -136,7 +136,6 @@ const Heatmap = () => {
             }
           }
           .color-empty { fill: #ebedf0; }
-          .color-scale-0 { fill: #ebedf0; }
           .color-scale-1 { fill: #9be9a8; }
           .color-scale-2 { fill: #40c463; }
           .color-scale-3 { fill: #30a14e; }
