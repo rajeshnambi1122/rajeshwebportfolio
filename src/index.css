@@ -171,6 +171,9 @@ a {
 /********** EDUCATION SECTION **********/
 .Education {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .graduate {
   font-size: 40px;
@@ -332,6 +335,9 @@ footer {
     max-width: 1200px;
     margin: 50px auto;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
