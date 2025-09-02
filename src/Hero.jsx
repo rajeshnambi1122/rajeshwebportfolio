@@ -3,6 +3,8 @@ import pfp from "./public/pfp.jpg";
 import { Button } from "@mui/material";
 import "animate.css";
 
+// Removed typewriter effect
+
 const Hero = ({
   skillsRef,
   aboutRef,
@@ -30,7 +32,7 @@ const Hero = ({
       <div className="hero">
         <img src={pfp} className="pfp" alt="Profile"></img>
         <h1>Rajesh Nambi</h1>
-        <p className="heroabout"> A Software Engineer</p>
+        <p className="heroabout">Full Stack Developer</p>
         <div className="buttons">
           <Button
             onClick={() => scrollToSection(aboutRef)}

@@ -20,7 +20,7 @@ header {
   left: 0;
   right: 0;
   margin: 5px;
-  border-radius: 25px;
+  border-radius: 150px;
   padding: 2px;
 }
 .rlogo {
@@ -142,7 +142,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   border-bottom: 1px solid #333;
 }
 h1 {
@@ -374,4 +374,287 @@ footer {
   h1 {
     font-size: 50px;
   }
+}
+
+/* Education Section Styles */
+.ba-container,
+.mca-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.mca-container {
+  animation-delay: 0.2s;
+}
+
+.ba-text,
+.mca-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.ba-header,
+.mca-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ba-icon,
+.mca-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #333;
+  animation: float 3s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.ba-icon:hover,
+.mca-icon:hover {
+  color: #4a90e2;
+  transform: translateY(-5px) scale(1.1);
+}
+
+.ba-header h2,
+.mca-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.ba-university,
+.mca-university {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.ba-duration,
+.mca-duration {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+.ba-logo,
+.mca-logo {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ba-logo-img,
+.mca-logo-img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.ba-logo-img:hover,
+.mca-logo-img:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  filter: brightness(1.1);
+}
+
+/* Responsive Design for Education Sections */
+@media (max-width: 768px) {
+  .ba-container,
+  .mca-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .ba-text,
+  .mca-text {
+    text-align: center;
+    margin-bottom: 20px;
+    min-width: auto;
+  }
+  
+  .ba-header,
+  .mca-header {
+    justify-content: center;
+  }
+  
+  .ba-logo-img,
+  .mca-logo-img {
+    max-width: 120px;
+  }
+}
+
+/* Micro Interactions & Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    transform: translate3d(0, -15px, 0);
+  }
+  70% {
+    transform: translate3d(0, -7px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(74, 144, 226, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(74, 144, 226, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Enhanced Skills Section */
+.skill-icons {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+}
+
+.skill-icons:hover {
+  animation: bounce 0.6s ease;
+  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+  transform: scale(1.2);
+}
+
+.skill-icons:active {
+  animation: pulse 0.4s ease;
+}
+
+/* Fun Button Effects */
+.projectname, .mca-header h2, .ba-header h2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.projectname:hover, .mca-header h2:hover, .ba-header h2:hover {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Scroll-triggered animations */
+.projects {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.skillbox {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* Add subtle particle effect */
+/* Removed decorative sparkle emoji before Education title */
+
+.Education h1 {
+  position: relative;
+}
+
+/* Typewriter Effect Styles */
+/* Removed typewriter styles */
+
+/* Enhanced Button Hover Effects */
+.buttons button {
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.buttons button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Add smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Profile picture enhanced animation */
+.pfp {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.pfp:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  filter: brightness(1.1) saturate(1.2);
 }

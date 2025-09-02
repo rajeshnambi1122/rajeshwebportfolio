@@ -1,5 +1,7 @@
 import React from "react";
 import Udemy from "./public/Udemy Cert.jpg";
+import Aditanar from "./public/Aditanar.jpg";
+import SRM from "./public/SRMlogo.png";
 import Coursera from "./public/Coursera.jpeg";
 import { SiCoursera, SiUdemy } from "react-icons/si";
 import { FaUserGraduate } from "react-icons/fa";
@@ -8,11 +10,48 @@ const Education = ({ educationRef }) => {
   return (
     <div ref={educationRef} className="Education">
       <h1>My Education</h1>
-      <div style={{ textAlign: "center" }}>
-        <FaUserGraduate className="graduate" />
-        <h2>B.A Economics</h2>
-        <p>Aditanar College of Arts & Science</p>
-        <p>June 2020 - June 2023</p>
+      {/* B.A Economics Section - Side by side layout */}
+      <div className="ba-container">
+        <div className="ba-text">
+          <div className="ba-header">
+            <FaUserGraduate className="ba-icon" />
+            <h2>B.A Economics</h2>
+          </div>
+          <p className="ba-university">Aditanar College of Arts & Science</p>
+          <p className="ba-duration">June 2020 - June 2023</p>
+        </div>
+        <div className="ba-logo">
+          <img src={Aditanar} alt="Aditanar" className="ba-logo-img" />
+        </div>
+      </div>
+      
+      {/* Dividing Line */}
+      <div style={{ 
+        display: "flex", 
+        alignItems: "center", 
+        margin: "40px 0", 
+        padding: "0 20px" 
+      }}>
+        <div style={{ 
+          flex: 1, 
+          height: "2px", 
+          background: "#333" 
+        }}></div>
+      </div>
+
+      {/* MCA Section - Side by side layout */}
+      <div className="mca-container">
+        <div className="mca-text">
+          <div className="mca-header">
+            <FaUserGraduate className="mca-icon" />
+            <h2>MCA (Master of Computer Applications)</h2>
+          </div>
+          <p className="mca-university">SRM Institute of Science and Technology</p>
+          <p className="mca-duration">2025 - Present</p>
+        </div>
+        <div className="mca-logo">
+          <img src={SRM} alt="SRM" className="mca-logo-img" />
+        </div>
       </div>
       <div className="projects">
         <div className="projectbox">

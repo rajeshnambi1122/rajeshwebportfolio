@@ -1,6 +1,8 @@
 import React from "react";
 import SLstudio from "./public/SLstudio.png";
 import Keeper from "./public/Keeper.png";
+import Sandy from "./public/sandy.png";
+import Tata from "./public/tata.png";
 import { GoLinkExternal } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 
@@ -74,6 +76,53 @@ const Projects = ({ projectsRef }) => {
             }}
           >
             <a href="https://rajeshnambi1122.github.io/keeper-vire/">Live</a>
+          </p>
+          <GoLinkExternal />
+        </div>
+        <div className="projectbox">
+          <img className="projectimage" src={Sandy} alt="Sandy's Market"></img>
+          <h2 className="projectname">Sandy's Market</h2>
+          <p style={{ padding: "5px" }}>
+            Architected and delivered a full-stack web application for a U.S.-based gas
+            station & pizza shop, integrating React/Vite front end with Node.js/Express
+            back end and MongoDB Atlas. Partnered with the client to translate business
+            needs (food ordering, gas prices) into intuitive UI flows and robust RESTful
+            APIs. Implemented Firebase Cloud Messaging for push notifications and
+            automated email alerts for order management, status updates, and customer
+            confirmations across Android app and web platform.
+          </p>
+          <p
+            style={{
+              display: "inline-block",
+              fontSize: "20px",
+              textDecoration: "underline",
+            }}
+          >
+            <a href="https://www.sandysmarket.net/">Live</a>
+          </p>
+          <GoLinkExternal />
+        </div>
+        <div className="projectbox">
+          <img className="projectimage" src={Tata} alt="Tata Marathon"></img>
+          <h2 className="projectname">Tata Marathon</h2>
+          <p style={{ padding: "5px" }}>
+            Developed Angular frontend application for Tata Power-sponsored Halwa City
+            Marathon 2025, featuring bilingual support (English/Tamil) and responsive
+            design for 4000+ participants. Built comprehensive registration system with
+            form validation, multiple event categories, and real-time feedback to
+            streamline community marathon sign-ups and participant management. Created an
+            admin dashboard with secure authentication, participant management, bulk
+            upload capabilities, and analytics for efficient event coordination by
+            organizers.
+          </p>
+          <p
+            style={{
+              display: "inline-block",
+              fontSize: "20px",
+              textDecoration: "underline",
+            }}
+          >
+            <a href="https://www.sanct.in/">Live</a>
           </p>
           <GoLinkExternal />
         </div>

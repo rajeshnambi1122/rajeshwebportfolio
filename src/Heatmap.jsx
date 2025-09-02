@@ -32,19 +32,20 @@ const Heatmap = () => {
         width: "100%",
         display: "flex",
         justifyContent: "center",
-        padding: "20px",
-        boxSizing: "border-box",
+        padding:"20px",
+        marginBottom:"50px"
       }}
     >
       <div
         style={{
-          background: "white",
-          borderRadius: "15px",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          background: "#fff",
+          borderRadius: "12px",
+          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
           padding: "20px",
-          maxWidth: "400px",
-          width: "90%",
+          maxWidth: "900px",
+          width: "95%",
           margin: "20px 0",
+          border: "1px solid rgba(0,0,0,0.06)",
         }}
       >
         <div
@@ -92,7 +93,7 @@ const Heatmap = () => {
             })}
             showMonthLabels={true}
             showWeekdayLabels={false}
-            gutterSize={1}
+            gutterSize={3}
           />
         </div>
         <Tooltip id="github-tooltip" />
@@ -102,37 +103,45 @@ const Heatmap = () => {
             height: auto;
           }
           .react-calendar-heatmap rect {
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
+            rx: 2;
+            ry: 2;
           }
           .react-calendar-heatmap text {
-            font-size: 12px;
+            font-size: 10px;
           }
           @media (min-width: 1024px) {
             .react-calendar-heatmap rect {
-              width: 8px;
-              height: 8px;
+              width: 12px;
+              height: 12px;
+              rx: 2;
+              ry: 2;
             }
             .react-calendar-heatmap text {
-              font-size: 8px;
+              font-size: 12px;
             }
           }
           @media (min-width: 769px) and (max-width: 1023px) {
             .react-calendar-heatmap rect {
-              width: 9px;
-              height: 9px;
+              width: 11px;
+              height: 11px;
+              rx: 2;
+              ry: 2;
             }
             .react-calendar-heatmap text {
-              font-size: 8px;
+              font-size: 11px;
             }
           }
           @media (max-width: 768px) {
             .react-calendar-heatmap rect {
-              width: 4px !important;
-              height: 4px !important;
+              width: 8px !important;
+              height: 8px !important;
+              rx: 2;
+              ry: 2;
             }
             .react-calendar-heatmap text {
-              font-size: 4px;
+              font-size: 8px;
             }
           }
           .color-empty { fill: #ebedf0; }
