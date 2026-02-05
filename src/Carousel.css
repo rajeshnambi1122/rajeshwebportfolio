@@ -1,0 +1,163 @@
+.carousel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    /* Reduced padding for better space utilization */
+    min-height: 400px;
+    /* Ensure stable height for arrow positioning */
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    max-width: 900px;
+    /* Increased from 500px for better desktop visibility */
+    margin: 0 auto;
+    transition: height 0.3s ease;
+    position: relative;
+    /* Create positioning context for arrows */
+}
+
+.carousel-content-wrapper {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    width: 100%;
+    align-items: flex-start;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 250px;
+    /* Fixed position to prevent movement */
+    margin-top: -22.5px;
+    /* Half of button height to center */
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    /* Increased from 40px for better visibility on desktop */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    /* Removed top from transition to prevent movement */
+    font-size: 18px;
+}
+
+.carousel-arrow:hover {
+    background-color: #fff;
+    transform: scale(1.15);
+    /* Removed translateY to prevent any movement */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-arrow:active {
+    transform: scale(1.05);
+    /* Removed translateY to prevent any movement */
+}
+
+.left-arrow {
+    left: 5px;
+}
+
+.right-arrow {
+    right: 5px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 12px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.carousel-dot:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+}
+
+.carousel-dot.active {
+    background-color: #000;
+    transform: scale(1.4);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .carousel-container {
+        padding: 0 40px;
+    }
+
+    .carousel-wrapper {
+        max-width: 700px;
+    }
+
+    .carousel-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 0 15px;
+    }
+
+    .carousel-wrapper {
+        max-width: 100%;
+    }
+
+    .carousel-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .left-arrow {
+        left: 2px;
+    }
+
+    .right-arrow {
+        right: 2px;
+    }
+
+    .carousel-dots {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .carousel-dot {
+        width: 10px;
+        height: 10px;
+    }
+}

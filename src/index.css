@@ -4,11 +4,13 @@
   box-sizing: border-box;
   font-family: "Zain", sans-serif;
 }
+
 html {
   background-color: papayawhip;
   background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
   padding-top: 20px;
 }
+
 /******** HEADER SECTION **************/
 header {
   background-color: #000;
@@ -23,15 +25,18 @@ header {
   border-radius: 150px;
   padding: 2px;
 }
+
 .rlogo {
   width: 45px;
   margin-top: 5px;
   border-radius: 25px;
 }
+
 .social {
   font-size: 40px;
   margin-right: 20px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -52,17 +57,26 @@ nav {
   width: 24px;
   height: 24px;
 }
+
 .custom-button {
   color: white;
   background-color: black;
   border-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .custom-button:hover {
   border-color: white;
   background-color: papayawhip;
   color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.custom-button:focus {
+  outline: 2px solid papayawhip;
+  outline-offset: 2px;
 }
 
 /******** HERO SECTION *************************/
@@ -74,9 +88,11 @@ nav {
   text-align: center;
   height: 100vh;
 }
+
 .hero h1 {
   font-size: 50px;
 }
+
 .hero p {
   font-size: 40px;
 }
@@ -85,6 +101,7 @@ nav {
   width: 90px;
   border-radius: 50%;
 }
+
 .heroabout {
   animation: fadeInout 3s infinite;
 }
@@ -93,9 +110,11 @@ nav {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -108,30 +127,37 @@ nav {
   align-items: center;
   border-bottom: 1px solid #333;
   margin-top: 250px;
+  padding-bottom: 60px;
 }
+
 .about h1 {
   font-size: 50px;
   text-align: center;
 }
+
 .about p {
   font-size: 30px;
   text-align: center;
   padding: 0px 25px;
+  line-height: 1.8;
 }
 
 /********** SKILLS SECTION ************/
 .skills {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   border-bottom: 1px solid #333;
   padding: 0px 25px;
+  padding-bottom: 60px;
 }
+
 .skills h1 {
   margin-bottom: 50px;
   font-size: 70px;
   text-align: center;
   font-weight: bold;
 }
+
 .skill-icons {
   font-size: 60px;
   margin: 20px;
@@ -145,24 +171,30 @@ nav {
   align-items: flex-start;
   border-bottom: 1px solid #333;
 }
+
 h1 {
   font-size: 70px;
   text-align: center;
   font-weight: bold;
- 
+
 }
+
 .projectbox {
   width: 400px;
   margin: 20px;
   border: 1px solid #333;
+  transition: all 0.3s ease;
 }
+
 .projectimage {
   max-width: 100%;
   max-height: 100%;
 }
+
 .projectname {
   margin-left: 5px;
 }
+
 a {
   text-decoration: none;
   color: #000;
@@ -170,11 +202,13 @@ a {
 
 /********** EDUCATION SECTION **********/
 .Education {
-  margin: 20px;
+  margin: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
+
 .graduate {
   font-size: 40px;
 }
@@ -192,31 +226,32 @@ footer {
 
 /* Desktop Styles */
 @media screen and (min-width: 769px) {
+
   /* Header styles */
   header {
     padding: 10px 30px;
     margin: 10px 20px;
   }
-  
+
   .rlogo {
     width: 55px;
     margin-top: 0;
   }
-  
+
   .social {
     font-size: 30px;
     margin-right: 25px;
     transition: transform 0.3s ease;
   }
-  
+
   .social:hover {
     transform: scale(1.2);
   }
-  
+
   .desktop-social {
     margin-left: 20px;
   }
-  
+
   /* Hero styles */
   .hero {
     padding-top: 180px;
@@ -224,22 +259,22 @@ footer {
     margin-right: auto;
     max-width: 1200px;
   }
-  
+
   .hero h1 {
     font-size: 70px;
     margin-bottom: 15px;
   }
-  
+
   .hero p {
     font-size: 50px;
   }
-  
+
   .pfp {
     width: 150px;
     margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
-  
+
   .buttons {
     margin-top: 30px;
     display: flex;
@@ -247,52 +282,52 @@ footer {
     justify-content: center;
     gap: 20px;
   }
-  
+
   /* About styles */
   .about {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 60px;
   }
-  
+
   .about h1 {
     font-size: 60px;
     margin-bottom: 30px;
   }
-  
+
   .about p {
     font-size: 24px !important;
-    line-height: 1.6;
+    line-height: 1.8;
     max-width: 900px;
     margin: 20px auto;
   }
-  
+
   .about img {
     width: 250px !important;
     margin: 20px 0 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
-  
+
   /* Skills styles */
   .skills {
     padding: 40px 60px;
     max-width: 1200px;
     margin: 50px auto;
   }
-  
+
   .skills h1 {
     font-size: 60px;
   }
-  
+
   .skill-icons {
     font-size: 70px;
     transition: transform 0.3s ease;
   }
-  
+
   .skill-icons:hover {
     transform: scale(1.2);
   }
-  
+
   .skillbox {
     display: flex;
     flex-wrap: wrap;
@@ -300,7 +335,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
   }
-  
+
   /* Projects styles */
   .projects {
     flex-direction: row;
@@ -311,25 +346,25 @@ footer {
     justify-content: center;
     gap: 40px;
   }
-  
+
   .projectbox {
-    width: 450px;
+    width: 500px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .projectbox:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   }
-  
+
   .projectbox p {
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 18px;
   }
-  
+
   /* Education styles */
   .Education {
     max-width: 1200px;
@@ -351,32 +386,42 @@ footer {
     font-size: 40px;
     margin: 10px;
   }
+
   .skills h1 {
     margin-bottom: 40px;
   }
+
   .about p {
     font-size: 20px !important;
   }
+
   .hero {
     margin-left: 20px;
     margin-right: 20px;
   }
+
   .hero h1 {
     font-size: 40px;
   }
+
   .hero p {
     font-size: 30px;
   }
+
   .social {
     font-size: 30px;
     margin-right: 15px;
   }
+
   .projects {
     flex-direction: column;
   }
+
   .projectbox {
-    width: 320px;
+    width: 100%;
+    max-width: 350px;
   }
+
   h1 {
     font-size: 50px;
   }
@@ -388,10 +433,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
-  gap: 30px;
+  padding: 30px;
+  gap: 40px;
   flex-wrap: wrap;
   opacity: 0;
   transform: translateY(20px);
@@ -465,7 +510,7 @@ footer {
   max-width: 150px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
 }
@@ -473,30 +518,31 @@ footer {
 .ba-logo-img:hover,
 .mca-logo-img:hover {
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   filter: brightness(1.1);
 }
 
 /* Responsive Design for Education Sections */
 @media (max-width: 768px) {
+
   .ba-container,
   .mca-container {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .ba-text,
   .mca-text {
     text-align: center;
     margin-bottom: 20px;
     min-width: auto;
   }
-  
+
   .ba-header,
   .mca-header {
     justify-content: center;
   }
-  
+
   .ba-logo-img,
   .mca-logo-img {
     max-width: 120px;
@@ -505,9 +551,12 @@ footer {
 
 /* Micro Interactions & Animations */
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -518,6 +567,7 @@ footer {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -525,24 +575,36 @@ footer {
 }
 
 @keyframes gradientShift {
-  0%, 100% {
+
+  0%,
+  100% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
 }
 
 @keyframes bounce {
-  0%, 20%, 53%, 80%, 100% {
-    transform: translate3d(0,0,0);
+
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
   }
-  40%, 43% {
+
+  40%,
+  43% {
     transform: translate3d(0, -15px, 0);
   }
+
   70% {
     transform: translate3d(0, -7px, 0);
   }
+
   90% {
     transform: translate3d(0, -2px, 0);
   }
@@ -552,22 +614,35 @@ footer {
   0% {
     box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7);
   }
+
   70% {
     box-shadow: 0 0 0 10px rgba(74, 144, 226, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(74, 144, 226, 0);
   }
 }
 
 @keyframes shake {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0);
   }
-  10%, 30%, 50%, 70%, 90% {
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     transform: translateX(-5px);
   }
-  20%, 40%, 60%, 80% {
+
+  20%,
+  40%,
+  60%,
+  80% {
     transform: translateX(5px);
   }
 }
@@ -581,7 +656,7 @@ footer {
 
 .skill-icons:hover {
   animation: bounce 0.6s ease;
-  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
   transform: scale(1.2);
 }
 
@@ -590,12 +665,16 @@ footer {
 }
 
 /* Fun Button Effects */
-.projectname, .mca-header h2, .ba-header h2 {
+.projectname,
+.mca-header h2,
+.ba-header h2 {
   position: relative;
   overflow: hidden;
 }
 
-.projectname:hover, .mca-header h2:hover, .ba-header h2:hover {
+.projectname:hover,
+.mca-header h2:hover,
+.ba-header h2:hover {
   animation: shake 0.5s ease-in-out;
 }
 
@@ -661,6 +740,35 @@ html {
 
 .pfp:hover {
   transform: scale(1.05) rotate(2deg);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   filter: brightness(1.1) saturate(1.2);
+}
+
+/* Carousel Container Styles */
+.projects-container {
+  border-bottom: 1px solid #333;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.certifications-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Ensure projectbox looks good in carousel */
+.carousel-item .projectbox {
+  margin: 0;
+  /* Remove margin as carousel handles spacing */
+  background-color: white;
+  /* Ensure readability if overlapping */
+}
+
+/* Responsive adjustments for carousel items */
+@media screen and (max-width: 768px) {
+  .carousel-item .projectbox {
+    width: 100%;
+    max-width: 350px;
+  }
 }

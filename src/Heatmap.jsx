@@ -10,17 +10,36 @@ const Heatmap = () => {
   const currentYear = new Date().getFullYear();
 
   useEffect(() => {
-    // Unofficial GitHub contributions API endpoint
-    // (If this API changes or becomes unavailable, you'll need to update this URL.)
-    fetch(
-      `https://github-contributions-api.jogruber.de/v4/rajeshnambi1122?y=${currentYear}`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        // Expected data structure: { contributions: [ { date: 'YYYY-MM-DD', count: number }, ... ] }
-        if (data.contributions) {
-          setValues(data.contributions);
-        }
+    // Fetch data from both current and previous year to show rolling 12 months
+    const previousYear = currentYear - 1;
+
+    const fetchYear = (year) =>
+      fetch(`https://github-contributions-api.jogruber.de/v4/rajeshnambi1122?y=${year}`)
+        .then((response) => response.json())
+        .catch((error) => {
+          console.error(`Error fetching contributions for ${year}:`, error);
+          return { contributions: [] };
+        });
+
+    // Fetch both years in parallel
+    Promise.all([fetchYear(previousYear), fetchYear(currentYear)])
+      .then(([prevYearData, currentYearData]) => {
+        // Merge contributions from both years
+        const allContributions = [
+          ...(prevYearData.contributions || []),
+          ...(currentYearData.contributions || [])
+        ];
+
+        // Filter to only show last 12 months
+        const oneYearAgo = new Date();
+        oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+
+        const filteredContributions = allContributions.filter(contribution => {
+          const contributionDate = new Date(contribution.date);
+          return contributionDate >= oneYearAgo && contributionDate <= new Date();
+        });
+
+        setValues(filteredContributions);
       })
       .catch((error) => {
         console.error("Error fetching contributions data:", error);
@@ -35,7 +54,7 @@ const Heatmap = () => {
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          padding:"20px 20px 0",
+          padding: "20px 20px 0",
         }}
       >
         <div
@@ -77,7 +96,7 @@ const Heatmap = () => {
             }}
           >
             <CalendarHeatmap
-              startDate={new Date(currentYear, 0, 1)}
+              startDate={new Date(new Date().setFullYear(new Date().getFullYear() - 1))}
               endDate={new Date()}
               values={values}
               classForValue={(value) => {
@@ -105,45 +124,30 @@ const Heatmap = () => {
               height: auto;
             }
             .react-calendar-heatmap rect {
-              width: 10px;
-              height: 10px;
-              rx: 2;
-              ry: 2;
+              width: 16px;
+              height: 16px;
+              rx: 3;
+              ry: 3;
+              transition: all 0.2s ease;
+            }
+            .react-calendar-heatmap rect:hover {
+              stroke: #555;
+              stroke-width: 1px;
+              transform: scale(1.1);
+              transform-origin: center;
             }
             .react-calendar-heatmap text {
-              font-size: 10px;
+              font-size: 13px;
+              fill: #555;
+              font-weight: 500;
             }
-            @media (min-width: 1024px) {
+            @media (max-width: 2000px) {
               .react-calendar-heatmap rect {
-                width: 12px;
-                height: 12px;
-                rx: 2;
-                ry: 2;
+                width: 12px !important;
+                height: 12px !important;
               }
               .react-calendar-heatmap text {
-                font-size: 12px;
-              }
-            }
-            @media (min-width: 769px) and (max-width: 1023px) {
-              .react-calendar-heatmap rect {
-                width: 11px;
-                height: 11px;
-                rx: 2;
-                ry: 2;
-              }
-              .react-calendar-heatmap text {
-                font-size: 11px;
-              }
-            }
-            @media (max-width: 768px) {
-              .react-calendar-heatmap rect {
-                width: 8px !important;
-                height: 8px !important;
-                rx: 2;
-                ry: 2;
-              }
-              .react-calendar-heatmap text {
-                font-size: 8px;
+                font-size: 10px;
               }
             }
             .color-empty { fill: #ebedf0; }
@@ -161,8 +165,8 @@ const Heatmap = () => {
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          padding:"10px",
-          marginBottom:"50px"
+          padding: "10px",
+          marginBottom: "50px"
         }}
       >
         <div
