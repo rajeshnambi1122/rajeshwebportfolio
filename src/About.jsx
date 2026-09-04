@@ -25,14 +25,7 @@ const About = ({ aboutRef }) => {
           margin: "10px 0",
         }}
       >
-        A motivated full-stack developer with expertise in front-end
-        technologies like HTML, CSS, JavaScript, React, Angular, and Vue, along
-        with experience in React Native for mobile app development. Proficient
-        in Python, as well as backend technologies such as Node.js, Express, and
-        SQL. Skilled in creating responsive, user-friendly web applications and
-        delivering solutions that blend functionality and aesthetics. Passionate
-        about learning new technologies, contributing to impactful projects, and
-        open to relocation to embrace new challenges.
+        I am a versatile full-stack developer with a passion for building comprehensive digital solutions. My technical expertise spans across creating responsive websites, robust backend services, and automated cron job reporting systems. I have hands-on experience integrating complex features like Stripe payments, alongside a strong foundation in modern frameworks such as React.js, Next.js and Node.js. I focus on delivering scalable, user-friendly applications that perfectly balance functionality and aesthetics.
       </p>
       <p
         style={{
@@ -42,12 +35,7 @@ const About = ({ aboutRef }) => {
           margin: "10px 0",
         }}
       >
-        My strong foundation in frontend development is complemented by my
-        eagerness to learn and implement new technologies and methodologies. I
-        thrive in collaborative environments and enjoy working closely with
-        clients and team members to achieve common goals. My proficiency in
-        using modern development tools and my commitment to best practices in
-        web development enable me to create maintainable and scalable code.
+        Beyond traditional development, I offer a unique blend of technical and digital marketing skills. I have proven experience in establishing brand identity, optimizing SEO, and leveraging tools like Google Search Console to drive online visibility. My expertise extends to managing Facebook and Instagram pages, creating engaging social media designs, and running targeted Meta Ads using the Meta Business Suite. This hybrid skill set allows me to not only build exceptional products but also ensure they reach and resonate with their intended audience.
       </p>
 
       <div></div>

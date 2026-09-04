@@ -60,13 +60,12 @@ const Heatmap = () => {
         <div
           style={{
             background: "#fff",
-            borderRadius: "12px",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+            borderRadius: "8px",
+            border: "1px solid #333",
             padding: "20px",
             maxWidth: "900px",
             width: "95%",
             margin: "20px 0",
-            border: "1px solid rgba(0,0,0,0.06)",
           }}
         >
           <div
@@ -92,36 +91,46 @@ const Heatmap = () => {
           <div
             style={{
               width: "100%",
-              overflow: "hidden",
+              overflowX: "auto",
+              WebkitOverflowScrolling: "touch",
+              scrollbarWidth: "thin",
             }}
           >
-            <CalendarHeatmap
-              startDate={new Date(new Date().setFullYear(new Date().getFullYear() - 1))}
-              endDate={new Date()}
-              values={values}
-              classForValue={(value) => {
-                if (!value || value.count === 0) return "color-empty";
-                if (value.count === 1) return "color-scale-1";
-                if (value.count === 2) return "color-scale-2";
-                if (value.count <= 4) return "color-scale-3";
-                return "color-scale-4";
+            <div
+              style={{
+                minWidth: "750px",
+                padding: "10px 5px",
               }}
-              tooltipDataAttrs={(value) => ({
-                "data-tooltip-id": "github-tooltip",
-                "data-tooltip-content": value?.date
-                  ? `${value.date}: ${value.count} contributions`
-                  : "No contributions",
-              })}
-              showMonthLabels={true}
-              showWeekdayLabels={false}
-              gutterSize={3}
-            />
+            >
+              <CalendarHeatmap
+                startDate={new Date(new Date().setFullYear(new Date().getFullYear() - 1))}
+                endDate={new Date()}
+                values={values}
+                classForValue={(value) => {
+                  if (!value || value.count === 0) return "color-empty";
+                  if (value.count === 1) return "color-scale-1";
+                  if (value.count === 2) return "color-scale-2";
+                  if (value.count <= 4) return "color-scale-3";
+                  return "color-scale-4";
+                }}
+                tooltipDataAttrs={(value) => ({
+                  "data-tooltip-id": "github-tooltip",
+                  "data-tooltip-content": value?.date
+                    ? `${value.date}: ${value.count} contributions`
+                    : "No contributions",
+                })}
+                showMonthLabels={true}
+                showWeekdayLabels={false}
+                gutterSize={3}
+              />
+            </div>
           </div>
           <Tooltip id="github-tooltip" />
           <style>{`
             .react-calendar-heatmap {
               width: 100% !important;
               height: auto;
+              background: #fff;
             }
             .react-calendar-heatmap rect {
               width: 16px;
@@ -150,7 +159,7 @@ const Heatmap = () => {
                 font-size: 10px;
               }
             }
-            .color-empty { fill: #ebedf0; }
+            .color-empty { fill: #ffffff; }
             .color-scale-1 { fill: #9be9a8; }
             .color-scale-2 { fill: #40c463; }
             .color-scale-3 { fill: #30a14e; }
@@ -172,12 +181,11 @@ const Heatmap = () => {
         <div
           style={{
             background: "#fff",
-            borderRadius: "12px",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+            borderRadius: "8px",
+            border: "1px solid #333",
             padding: "20px",
             maxWidth: "900px",
             width: "95%",
-            border: "1px solid rgba(0,0,0,0.06)",
           }}
         >
           <div
@@ -197,7 +205,7 @@ const Heatmap = () => {
                 margin: 0,
               }}
             >
-              LeetCode Stats - Rajesh Nambi
+              LeetCode Stats
             </h2>
           </div>
           <div

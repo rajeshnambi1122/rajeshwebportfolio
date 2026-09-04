@@ -321,11 +321,12 @@ footer {
 
   .skill-icons {
     font-size: 70px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .skill-icons:hover {
     transform: scale(1.2);
+    color: var(--hover-color, inherit);
   }
 
   .skillbox {
@@ -656,12 +657,14 @@ footer {
 
 .skill-icons:hover {
   animation: bounce 0.6s ease;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 5px 15px var(--hover-color, rgba(0, 0, 0, 0.3)));
   transform: scale(1.2);
+  color: var(--hover-color, inherit);
 }
 
 .skill-icons:active {
   animation: pulse 0.4s ease;
+  color: var(--hover-color, inherit);
 }
 
 /* Fun Button Effects */
