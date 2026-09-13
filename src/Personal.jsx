@@ -1,7 +1,4 @@
 import React from "react";
-import { SiLetterboxd } from "react-icons/si";
-import { FaGamepad } from "react-icons/fa";
-import { TbSteeringWheel } from "react-icons/tb";
 
 const Personal = () => {
   return (
