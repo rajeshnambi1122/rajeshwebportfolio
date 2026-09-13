@@ -35,13 +35,12 @@ const About = ({ aboutRef, educationRef }) => {
         I am a versatile full-stack developer with a passion for building
         comprehensive digital solutions. My technical expertise spans across
         creating responsive websites, robust backend services, and automated
-        cron job reporting systems. I have hands-on experience integrating
-        complex features like{" "}
-        <span className="tech-clip tech-stripe"><SiStripe className="tech-icon" style={{ color: "#635bff" }} /> Stripe</span> payments,
-        alongside a strong foundation in modern frameworks such as{" "}
+        cron job reporting systems. I have a strong foundation in modern frameworks such as{" "}
         <span className="tech-clip tech-react"><FaReact className="tech-icon" style={{ color: "#61dafb" }} /> React.js</span>,{" "}
         <span className="tech-clip tech-next"><SiNextdotjs className="tech-icon" style={{ color: "#000" }} /> Next.js</span> and{" "}
-        <span className="tech-clip tech-node"><FaNodeJs className="tech-icon" style={{ color: "#339933" }} /> Node.js</span>. I focus on
+        <span className="tech-clip tech-node"><FaNodeJs className="tech-icon" style={{ color: "#339933" }} /> Node.js</span>,
+        alongside hands-on experience integrating complex features like{" "}
+        <span className="tech-clip tech-stripe"><SiStripe className="tech-icon" style={{ color: "#635bff" }} /> Stripe</span> payments. I focus on
         delivering scalable, user-friendly applications that perfectly balance
         functionality and aesthetics.
       </p>

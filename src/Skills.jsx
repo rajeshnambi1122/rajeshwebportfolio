@@ -8,9 +8,7 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaNpm,
-  FaAws,
-  FaFacebook,
-  FaInstagram
+  FaAws
 } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
 import {
@@ -24,9 +22,10 @@ import {
   SiMysql,
   SiGooglesearchconsole,
   SiGoogleads,
-  SiMeta
+  SiMeta,
+  SiGoogleanalytics
 } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+import { VscVscode, VscAzure } from "react-icons/vsc";
 import { TbSeo } from "react-icons/tb";
 
 const skillCategories = [
@@ -52,6 +51,7 @@ const skillCategories = [
       { icon: SiMysql, name: "MySQL", color: "#4479A1" },
       { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
       { icon: FaAws, name: "AWS", color: "#FF9900" },
+      { icon: VscAzure, name: "Azure", color: "#008AD7" },
     ],
   },
   {
@@ -69,10 +69,9 @@ const skillCategories = [
     skills: [
       { icon: TbSeo, name: "SEO", color: "#4285F4" },
       { icon: SiGooglesearchconsole, name: "Search Console", color: "#4285F4" },
+      { icon: SiGoogleanalytics, name: "Google Analytics", color: "#E37400" },
       { icon: SiGoogleads, name: "Google Ads", color: "#F4B400" },
-      { icon: SiMeta, name: "Meta Suite", color: "#0468FF" },
-      { icon: FaFacebook, name: "Facebook", color: "#1877F2" },
-      { icon: FaInstagram, name: "Instagram", color: "#E4405F" },
+      { icon: SiMeta, name: "Meta Ads", color: "#0468FF" }
     ],
   },
 ];

@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/pricedown');
+@import url('https://fonts.cdnfonts.com/css/cyberpunk-is-not-dead');
+
 * {
   margin: 0px;
   padding: 0px;
@@ -1060,6 +1063,14 @@ html {
   .carousel-item .projectbox {
     width: 100%;
     max-width: 350px;
+  }
+  .carousel-item .projectbox .projectname {
+    font-size: 22px;
+    margin: 10px 5px;
+  }
+  .carousel-item .projectbox p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
   }
 }
 

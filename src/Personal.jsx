@@ -18,8 +18,13 @@ const Personal = () => {
             <rect x="25" y="45" width="50" height="18" fill="#111" />
             <text x="50" y="58" fill="#f3aa19" fontSize="14" fontWeight="bold" textAnchor="middle" fontFamily="Impact, sans-serif" letterSpacing="2">FIVE</text>
           </svg>
-        </span> and the neon-lit streets of{" "}
-        <span className="tech-clip tech-cyberpunk"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Cyberpunk_2077_logo.svg" alt="Cyberpunk 2077" className="tech-icon real-logo" style={{ height: "1em", top: "-2px" }} /></span>.
+        </span>
+        <span style={{ fontFamily: "'Pricedown Bl', sans-serif", fontSize: "1.2em", letterSpacing: "1px", color: "#5a9e33" }}>Grand Theft Auto V</span>
+        {" "}and the neon-lit streets of{" "}
+        <span className="tech-clip tech-cyberpunk">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Cyberpunk_2077_logo.svg" alt="Cyberpunk 2077" className="tech-icon real-logo" style={{ height: "1em", top: "-2px", marginRight: "6px" }} />
+        </span>
+        <span style={{ fontFamily: "'Cyberpunk Is Not Dead', sans-serif", fontSize: "1.1em", letterSpacing: "1px", color: "#fcee0a", textShadow: "1px 1px 2px #000" }}>Cyberpunk 2077</span>.
         Come the weekend, my eyes are glued to the screen as a massive{" "}
         <span className="tech-clip tech-f1"><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg" alt="Formula 1" className="tech-icon real-logo" style={{ height: "0.9em", top: "-2px", marginRight: "4px" }} /> Formula 1</span> fan, analyzing race strategies and cheering for my favorite teams.
       </p>
