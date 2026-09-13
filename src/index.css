@@ -200,11 +200,27 @@ nav {
 }
 
 .tech-instagram {
-  background-image: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 .tech-meta {
-  background-image: linear-gradient(135deg, #0081fb 0%, #0064e0 50%, #0052cc 100%);
+  background-image: linear-gradient(135deg, #0081fb 0%, #00c6ff 100%);
+}
+
+.tech-letterboxd {
+  background-image: linear-gradient(90deg, #FF8000 0%, #00E054 50%, #40BCF4 100%);
+}
+
+.tech-gta {
+  background-image: linear-gradient(135deg, #5a9e33 0%, #87c734 50%, #f3aa19 100%);
+}
+
+.tech-cyberpunk {
+  background-image: linear-gradient(135deg, #fce100 0%, #00f0ff 100%);
+}
+
+.tech-f1 {
+  background-image: linear-gradient(135deg, #e10600 0%, #ff4b4b 100%);
 }
 
 /* Education within About */
@@ -1044,5 +1060,112 @@ html {
   .carousel-item .projectbox {
     width: 100%;
     max-width: 350px;
+  }
+}
+
+/* Personal Section */
+.personal-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+}
+
+.personal-section h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.personal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.personal-card {
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.personal-card-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.personal-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.personal-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.personal-card p strong {
+  color: #333;
+}
+
+/* F1 Section Animation */
+.f1-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.f1-section h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.f1-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.f1-track {
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 2px dashed #777;
+  /* Give it a track look */
+}
+
+.f1-car {
+  font-size: 40px;
+  position: absolute;
+  right: -50px;
+  /* Start off-screen to the right */
+  animation: drive-f1 4s linear infinite;
+}
+
+@keyframes drive-f1 {
+  0% {
+    right: -50px;
+  }
+
+  100% {
+    right: 110%;
+    /* Drive past the left edge */
   }
 }
