@@ -34,50 +34,81 @@ import {
 import { VscVscode } from "react-icons/vsc";
 import { TbSeo } from "react-icons/tb";
 
+const skillCategories = [
+  {
+    title: "Frontend",
+    skills: [
+      { icon: FaHtml5, name: "HTML5", color: "#E34F26" },
+      { icon: FaCss3Alt, name: "CSS3", color: "#1572B6" },
+      { icon: FaJs, name: "JavaScript", color: "#F7DF1E" },
+      { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+      { icon: FaReact, name: "React", color: "#61DAFB" },
+      { icon: SiRedux, name: "Redux", color: "#764ABC" },
+      { icon: SiVite, name: "Vite", color: "#646CFF" },
+      { icon: SiTailwindcss, name: "Tailwind", color: "#06B6D4" },
+    ],
+  },
+  {
+    title: "Backend & Database",
+    skills: [
+      { icon: FaNodeJs, name: "Node.js", color: "#339933" },
+      { icon: SiExpress, name: "Express", color: "#828282" },
+      { icon: FaPython, name: "Python", color: "#3776AB" },
+      { icon: SiMysql, name: "MySQL", color: "#4479A1" },
+      { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
+      { icon: FaAws, name: "AWS", color: "#FF9900" },
+    ],
+  },
+  {
+    title: "Tools & Workflow",
+    skills: [
+      { icon: FaGitAlt, name: "Git", color: "#F05032" },
+      { icon: FaNpm, name: "npm", color: "#CB3837" },
+      { icon: SiPostman, name: "Postman", color: "#FF6C37" },
+      { icon: VscVscode, name: "VS Code", color: "#007ACC" },
+      { icon: FaFigma, name: "Figma", color: "#F24E1E" },
+    ],
+  },
+  {
+    title: "Digital Marketing",
+    skills: [
+      { icon: TbSeo, name: "SEO", color: "#4285F4" },
+      { icon: SiGooglesearchconsole, name: "Search Console", color: "#4285F4" },
+      { icon: SiGoogleads, name: "Google Ads", color: "#F4B400" },
+      { icon: SiMeta, name: "Meta Suite", color: "#0468FF" },
+      { icon: FaFacebook, name: "Facebook", color: "#1877F2" },
+      { icon: FaInstagram, name: "Instagram", color: "#E4405F" },
+    ],
+  },
+];
+
 const Skills = ({ skillsRef }) => {
   return (
     <div id="skills" className="skills" ref={skillsRef}>
-      <h1>Technical Skills</h1>
-      <div className="skillbox">
-        <FaHtml5 className="skill-icons" style={{ "--hover-color": "#E34F26" }} />
-        <FaCss3Alt className="skill-icons" style={{ "--hover-color": "#1572B6" }} />
-        <FaJs className="skill-icons" style={{ "--hover-color": "#F7DF1E" }} />
-        <FaPython className="skill-icons" style={{ "--hover-color": "#3776AB" }} />
-        <SiJquery className="skill-icons" style={{ "--hover-color": "#0769AD" }} />
-        <SiTypescript className="skill-icons" style={{ "--hover-color": "#3178C6" }} />
-        <SiAngular className="skill-icons" style={{ "--hover-color": "#DD0031" }} />
-        <SiVuedotjs className="skill-icons" style={{ "--hover-color": "#4FC08D" }} />
-        <FaReact className="skill-icons" style={{ "--hover-color": "#61DAFB" }} />
-        <SiVite className="skill-icons" style={{ "--hover-color": "#646CFF" }} />
-        <SiRedux className="skill-icons" style={{ "--hover-color": "#764ABC" }} />
-        <SiBootstrap className="skill-icons" style={{ "--hover-color": "#7952B3" }} />
-        <SiTailwindcss className="skill-icons" style={{ "--hover-color": "#06B6D4" }} />
-        <SiMui className="skill-icons" style={{ "--hover-color": "#007FFF" }} />
-        <FaNodeJs className="skill-icons" style={{ "--hover-color": "#339933" }} />
-        <FaNpm className="skill-icons" style={{ "--hover-color": "#CB3837" }} />
-        <SiExpress className="skill-icons" style={{ "--hover-color": "#828282" }} />
-        <SiMysql className="skill-icons" style={{ "--hover-color": "#4479A1" }} />
-        <SiMongodb className="skill-icons" style={{ "--hover-color": "#47A248" }} />
-        <SiPostman className="skill-icons" style={{ "--hover-color": "#FF6C37" }} />
-        <FaGitAlt className="skill-icons" style={{ "--hover-color": "#F05032" }} />
-        <VscVscode className="skill-icons" style={{ "--hover-color": "#007ACC" }} />
-        <FaFigma className="skill-icons" style={{ "--hover-color": "#F24E1E" }} />
-        <FaAws className="skill-icons" style={{ "--hover-color": "#FF9900" }} />
-      </div>
-
-      <h1 style={{ marginTop: "60px" }}>Digital Marketing & Business Skills</h1>
-      <div className="skillbox">
-        <TbSeo className="skill-icons" style={{ "--hover-color": "#828282" }} />
-        <SiGooglesearchconsole className="skill-icons" style={{ "--hover-color": "#4285F4" }} />
-        <SiGoogleads className="skill-icons" style={{ "--hover-color": "#F4B400" }} />
-        <SiMeta className="skill-icons" style={{ "--hover-color": "#0468FF" }} />
-        <FaFacebook className="skill-icons" style={{ "--hover-color": "#1877F2" }} />
-        <FaInstagram className="skill-icons" style={{ "--hover-color": "#E4405F" }} />
-      </div>
-
-      <h2 style={{ textAlign: "center", margin: "40px" }}>
-        & Also Learning More.....
-      </h2>
+      <h1>My Skills</h1>
+      {skillCategories.map((category, catIdx) => (
+        <div key={catIdx} className="skill-category">
+          <h2 className="skill-category-title">{category.title}</h2>
+          <div className="skill-grid">
+            {category.skills.map((skill, idx) => {
+              const Icon = skill.icon;
+              return (
+                <div
+                  key={idx}
+                  className="skill-card"
+                  style={{ "--brand-color": skill.color }}
+                >
+                  <div className="skill-card-icon">
+                    <Icon />
+                  </div>
+                  <span className="skill-card-name">{skill.name}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+      <p className="skills-learning">& Also Learning More.....</p>
     </div>
   );
 };

@@ -4,7 +4,6 @@ import Header from "./Header";
 import Hero from "./Hero";
 import Skills from "./Skills";
 import Projects from "./Projects";
-import Education from "./Education";
 import Heatmap from "./Heatmap";
 import Footer from "./Footer";
 import { useRef } from "react";
@@ -29,10 +28,9 @@ const App = () => {
         educationRef={educationRef}
         scrollToSection={scrollToSection}
       />
-      <About aboutRef={aboutRef} />
+      <About aboutRef={aboutRef} educationRef={educationRef} />
       <Skills skillsRef={skillsRef} />
       <Projects projectsRef={projectsRef} />
-      <Education educationRef={educationRef} />
       <Heatmap />
       <Footer />
     </div>
@@ -40,3 +38,4 @@ const App = () => {
 };
 
 export default App;
+

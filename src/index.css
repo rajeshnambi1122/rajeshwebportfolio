@@ -6,7 +6,7 @@
 }
 
 html {
-  background-color: papayawhip;
+  background-color: white;
   background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
   padding-top: 20px;
 }
@@ -142,20 +142,272 @@ nav {
   line-height: 1.8;
 }
 
+/* Logo-clipped tech names */
+.tech-clip {
+  font-weight: 900;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline;
+  padding: 0 2px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: default;
+}
+
+.tech-clip:hover {
+  filter: brightness(1.2);
+}
+
+.tech-icon {
+  -webkit-text-fill-color: initial;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  font-size: 0.85em;
+  position: relative;
+  top: -2px;
+}
+
+.tech-react {
+  background-image: linear-gradient(135deg, #61dafb 0%, #21a1d3 100%);
+}
+
+.tech-next {
+  background-image: linear-gradient(135deg, #000000 0%, #333333 50%, #000000 100%);
+}
+
+.tech-node {
+  background-image: linear-gradient(135deg, #339933 0%, #66cc33 50%, #339933 100%);
+}
+
+.tech-stripe {
+  background-image: linear-gradient(135deg, #635bff 0%, #a259ff 50%, #635bff 100%);
+}
+
+.tech-seo {
+  background-image: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335);
+}
+
+.tech-google {
+  background-image: linear-gradient(90deg, #4285f4 25%, #34a853 25%, #34a853 50%, #fbbc05 50%, #fbbc05 75%, #ea4335 75%);
+}
+
+.tech-facebook {
+  background-image: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+}
+
+.tech-instagram {
+  background-image: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.tech-meta {
+  background-image: linear-gradient(135deg, #0081fb 0%, #0064e0 50%, #0052cc 100%);
+}
+
+/* Education within About */
+.about-education {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto 20px;
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+}
+
+.about-education-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.about-edu-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-edu-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  background: #fafafa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 280px;
+  max-width: 420px;
+  flex: 1;
+}
+
+.about-edu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-edu-logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.about-edu-card p {
+  font-size: 0.95rem !important;
+  text-align: left !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.about-edu-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.about-edu-info .about-edu-school {
+  margin: 3px 0;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: left;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.about-edu-info .about-edu-year {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: #888;
+  text-align: left;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.about-certifications {
+  width: 100%;
+  margin-top: 10px;
+}
+
 /********** SKILLS SECTION ************/
 .skills {
   margin-top: 60px;
   margin-bottom: 60px;
   border-bottom: 1px solid #333;
-  padding: 0px 25px;
-  padding-bottom: 60px;
+  padding: 40px 25px 60px;
 }
 
 .skills h1 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 70px;
   text-align: center;
   font-weight: bold;
+}
+
+.skill-category {
+  max-width: 1000px;
+  margin: 0 auto 35px;
+}
+
+.skill-category-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eee;
+  text-align: left;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 14px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px 12px;
+  border-radius: 14px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  cursor: default;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--brand-color, #333);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--brand-color, #333);
+}
+
+.skill-card:hover::before {
+  transform: scaleX(1);
+}
+
+.skill-card-icon {
+  font-size: 36px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card:hover .skill-card-icon {
+  color: var(--brand-color, #333);
+  transform: scale(1.15);
+}
+
+.skill-card-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  text-align: center;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.skill-card:hover .skill-card-name {
+  color: #222;
+}
+
+.skills-learning {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #888;
+  font-style: italic;
 }
 
 .skill-icons {
@@ -310,7 +562,7 @@ footer {
 
   /* Skills styles */
   .skills {
-    padding: 40px 60px;
+    padding: 50px 60px 60px;
     max-width: 1200px;
     margin: 50px auto;
   }
@@ -319,22 +571,13 @@ footer {
     font-size: 60px;
   }
 
-  .skill-icons {
-    font-size: 70px;
-    transition: all 0.3s ease;
+  .skill-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 16px;
   }
 
-  .skill-icons:hover {
-    transform: scale(1.2);
-    color: var(--hover-color, inherit);
-  }
-
-  .skillbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
+  .skill-card-icon {
+    font-size: 40px;
   }
 
   /* Projects styles */
@@ -381,15 +624,28 @@ footer {
 @media screen and (max-width: 768px) {
   .skills h1 {
     font-size: 50px;
+    margin-bottom: 30px;
   }
 
-  .skill-icons {
-    font-size: 40px;
-    margin: 10px;
+  .skill-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
   }
 
-  .skills h1 {
-    margin-bottom: 40px;
+  .skill-card {
+    padding: 12px 6px 10px;
+  }
+
+  .skill-card-icon {
+    font-size: 28px;
+  }
+
+  .skill-card-name {
+    font-size: 0.65rem;
+  }
+
+  .skill-category-title {
+    font-size: 1rem;
   }
 
   .about p {
@@ -425,6 +681,21 @@ footer {
 
   h1 {
     font-size: 50px;
+  }
+
+  .about-edu-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-edu-card {
+    min-width: unset;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .about-education-title {
+    font-size: 1.4rem;
   }
 }
 
