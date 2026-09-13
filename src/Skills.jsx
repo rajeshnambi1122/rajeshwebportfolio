@@ -15,17 +15,12 @@ import {
 import { FaFigma } from "react-icons/fa6";
 import {
   SiTailwindcss,
-  SiMui,
-  SiJquery,
-  SiBootstrap,
   SiTypescript,
-  SiAngular,
   SiRedux,
   SiVite,
   SiExpress,
   SiMongodb,
   SiPostman,
-  SiVuedotjs,
   SiMysql,
   SiGooglesearchconsole,
   SiGoogleads,

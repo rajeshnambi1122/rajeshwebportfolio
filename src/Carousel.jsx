@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './Carousel.css';
 
@@ -8,13 +8,13 @@ const Carousel = ({ children, autoPlay = false, interval = 3000 }) => {
     const contentRef = useRef(null);
     const length = React.Children.count(children);
 
-    const next = () => {
+    const next = useCallback(() => {
         if (currentIndex < length - 1) {
             setCurrentIndex(prevState => prevState + 1);
         } else {
             setCurrentIndex(0);
         }
-    };
+    }, [currentIndex, length]);
 
     const prev = () => {
         if (currentIndex > 0) {
@@ -28,7 +28,7 @@ const Carousel = ({ children, autoPlay = false, interval = 3000 }) => {
         if (!autoPlay) return;
         const timer = setInterval(next, interval);
         return () => clearInterval(timer);
-    }, [currentIndex, autoPlay, interval]);
+    }, [currentIndex, autoPlay, interval, next]);
 
     useEffect(() => {
         if (contentRef.current) {
