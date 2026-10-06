@@ -447,23 +447,78 @@ h1 {
   font-size: 70px;
   text-align: center;
   font-weight: bold;
-
 }
 
 .projectbox {
-  width: 400px;
-  margin: 20px;
-  border: 1px solid #333;
-  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectbox:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
 }
 
 .projectimage {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .projectname {
-  margin-left: 5px;
+  margin: 18px 20px 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.projectbox p {
+  padding: 0 20px 6px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  padding: 10px 20px 20px;
+  align-items: center;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: #333 !important;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+.project-link:hover {
+  background: #222;
+  color: #fff !important;
+  border-color: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-link svg {
+  font-size: 16px;
 }
 
 a {
@@ -599,33 +654,9 @@ footer {
     font-size: 40px;
   }
 
-  /* Projects styles */
-  .projects {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto 50px;
-    padding: 20px;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .projectbox {
-    width: 500px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .projectbox:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  }
-
   .projectbox p {
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   /* Education styles */
@@ -695,7 +726,8 @@ footer {
 
   .projectbox {
     width: 100%;
-    max-width: 350px;
+    max-width: 380px;
+    border-radius: 16px;
   }
 
   h1 {
@@ -1052,25 +1084,26 @@ html {
 
 /* Ensure projectbox looks good in carousel */
 .carousel-item .projectbox {
-  margin: 0;
-  /* Remove margin as carousel handles spacing */
-  background-color: white;
-  /* Ensure readability if overlapping */
+  margin: 0 auto;
 }
 
 /* Responsive adjustments for carousel items */
 @media screen and (max-width: 768px) {
   .carousel-item .projectbox {
     width: 100%;
-    max-width: 350px;
+    max-width: 380px;
   }
   .carousel-item .projectbox .projectname {
-    font-size: 22px;
-    margin: 10px 5px;
+    font-size: 1.25rem;
+    margin: 14px 16px 6px;
   }
   .carousel-item .projectbox p {
-    font-size: 15px !important;
-    line-height: 1.5 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    padding: 0 16px 6px !important;
+  }
+  .carousel-item .project-links {
+    padding: 8px 16px 16px;
   }
 }
 

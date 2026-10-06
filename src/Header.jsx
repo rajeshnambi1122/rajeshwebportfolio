@@ -2,7 +2,7 @@ import React from "react";
 import rlogo from "./public/rlogo.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+import { SiGmail } from "react-icons/si";
 import "animate.css";
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
             <FaGithub className="social desktop-social" color="white" />
           </a>
           <a href="mailto:rajeshnambi2016@gmail.com">
-            <IoMdMail className="social desktop-social" color="white" />
+            <SiGmail className="social desktop-social" color="white" />
           </a>
         </div>
       </nav>

@@ -8,7 +8,8 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaNpm,
-  FaAws
+  FaAws,
+  FaDocker
 } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
 import {
@@ -58,6 +59,7 @@ const skillCategories = [
     title: "Tools & Workflow",
     skills: [
       { icon: FaGitAlt, name: "Git", color: "#F05032" },
+      { icon: FaDocker, name: "Docker", color: "#2496ED" },
       { icon: FaNpm, name: "npm", color: "#CB3837" },
       { icon: SiPostman, name: "Postman", color: "#FF6C37" },
       { icon: VscVscode, name: "VS Code", color: "#007ACC" },

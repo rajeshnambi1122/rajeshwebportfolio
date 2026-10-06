@@ -38,39 +38,33 @@
 
 .carousel-arrow {
     position: absolute;
-    top: 250px;
-    /* Fixed position to prevent movement */
-    margin-top: -22.5px;
-    /* Half of button height to center */
-    background-color: rgba(255, 255, 255, 0.9);
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
     color: #333;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     width: 45px;
     height: 45px;
-    /* Increased from 40px for better visibility on desktop */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 2;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-    /* Removed top from transition to prevent movement */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     font-size: 18px;
 }
 
 .carousel-arrow:hover {
-    background-color: #fff;
-    transform: scale(1.15);
-    /* Removed translateY to prevent any movement */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-    border-color: rgba(0, 0, 0, 0.2);
+    background-color: #222;
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-arrow:active {
-    transform: scale(1.05);
-    /* Removed translateY to prevent any movement */
+    transform: translateY(-50%) scale(1.0);
 }
 
 .left-arrow {

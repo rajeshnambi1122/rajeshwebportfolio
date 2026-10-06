@@ -16,142 +16,74 @@ const Projects = ({ projectsRef }) => {
           <div className="projectbox">
             <img className="projectimage" src={SLstudio} alt="SL Studio"></img>
             <h2 className="projectname">SL Studio</h2>
-            <p style={{ padding: "5px" }}>
+            <p>
               Designed and developed a responsive website for SL Studio using
               HTML, CSS, and JavaScript. Created an attractive portfolio showcase
-              and detailed service information sections.Ensured cross-browser
-              compatibility and seamless user experience across
-              devices.Implemented a user-friendly website to facilitate client
-              inquiries.
+              and detailed service information sections. Ensured cross-browser
+              compatibility and seamless user experience across devices.
             </p>
-            <p
-              style={{
-                fontSize: "20px",
-                display: "inline-block",
-                marginRight: "20px",
-                marginLeft: "5px",
-                textDecoration: "underline",
-              }}
-            >
-              <FaGithub />{" "}
-              <a href="https://github.com/rajeshnambi1122/SLstudio">Code</a>
-            </p>
-            <p
-              style={{
-                display: "inline-block",
-                fontSize: "20px",
-                textDecoration: "underline",
-              }}
-            >
-              <a href="https://slstudio.netlify.app/">Live</a>
-            </p>
-            <GoLinkExternal />
+            <div className="project-links">
+              <a href="https://github.com/rajeshnambi1122/SLstudio" className="project-link" target="_blank" rel="noopener noreferrer">
+                <FaGithub /> Code
+              </a>
+              <a href="https://slstudio.netlify.app/" className="project-link" target="_blank" rel="noopener noreferrer">
+                <GoLinkExternal /> Live
+              </a>
+            </div>
           </div>
           <div className="projectbox">
             <img className="projectimage" src={Keeper} alt="Keeper"></img>
             <h2 className="projectname">Keeper</h2>
-            <p style={{ padding: "5px" }}>
+            <p>
               Developed a responsive note-taking app using React and Vite,
               allowing users to create, view, and delete notes. Implemented a
               clean and intuitive user interface with real-time note management
-              and dynamic updates. Demonstrated proficiency in modern frontend
-              frameworks and tools, enhancing coding skills and understanding of
-              React's ecosystem.
+              and dynamic updates.
             </p>
-            <p
-              style={{
-                fontSize: "20px",
-                display: "inline-block",
-                marginRight: "20px",
-                marginLeft: "5px",
-                textDecoration: "underline",
-              }}
-            >
-              <FaGithub />{" "}
-              <a href="https://github.com/rajeshnambi1122/keeper-vire">Code</a>
-            </p>
-            <p
-              style={{
-                display: "inline-block",
-                fontSize: "20px",
-                textDecoration: "underline",
-              }}
-            >
-              <a href="https://rajeshnambi1122.github.io/keeper-vire/">Live</a>
-            </p>
-            <GoLinkExternal />
+            <div className="project-links">
+              <a href="https://github.com/rajeshnambi1122/keeper-vire" className="project-link" target="_blank" rel="noopener noreferrer">
+                <FaGithub /> Code
+              </a>
+              <a href="https://rajeshnambi1122.github.io/keeper-vire/" className="project-link" target="_blank" rel="noopener noreferrer">
+                <GoLinkExternal /> Live
+              </a>
+            </div>
           </div>
           <div className="projectbox">
             <img className="projectimage" src={Sandy} alt="Sandy's Market"></img>
             <h2 className="projectname">Sandy's Market</h2>
-            <p style={{ padding: "5px" }}>
+            <p>
               Architected and delivered a full-stack web application for a U.S.-based gas
-              station & pizza shop, integrating Reactfront end with Node.js/Express
-              back end and MongoDB. Partnered with the client to translate business
-              needs (food ordering, gas prices) into intuitive UI flows and robust RESTful
-              APIs. Implemented Firebase Cloud Messaging for push notifications and
-              automated email alerts for order management, status updates, and customer
-              confirmations across Android app and web platform.
+              station & pizza shop, integrating React front end with Node.js/Express
+              back end and MongoDB. Implemented Firebase Cloud Messaging for push
+              notifications and automated email alerts for order management.
             </p>
-            <p
-              style={{
-                fontSize: "20px",
-                display: "inline-block",
-                marginRight: "20px",
-                marginLeft: "5px",
-                textDecoration: "underline",
-              }}
-            >
-              <FaGithub />{" "}
-              <a href="https://github.com/rajeshnambi1122/sandymarket">Code</a>
-            </p>
-            <p
-              style={{
-                display: "inline-block",
-                fontSize: "20px",
-                textDecoration: "underline",
-              }}
-            >
-              <GoLinkExternal />
-              <a href="https://www.sandysmarket.net/">Live</a>
-            </p>
-
+            <div className="project-links">
+              <a href="https://github.com/rajeshnambi1122/sandymarket" className="project-link" target="_blank" rel="noopener noreferrer">
+                <FaGithub /> Code
+              </a>
+              <a href="https://www.sandysmarket.net/" className="project-link" target="_blank" rel="noopener noreferrer">
+                <GoLinkExternal /> Live
+              </a>
+            </div>
           </div>
           <div className="projectbox">
             <img className="projectimage" src={Tata} alt="Tata Marathon"></img>
             <h2 className="projectname">Tata Marathon</h2>
-            <p style={{ padding: "5px" }}>
-              Developed Angular frontend application for Tata Power-sponsored Halwa City
+            <p>
+              Developed Angular frontend for Tata Power-sponsored Halwa City
               Marathon 2025, featuring bilingual support (English/Tamil) and responsive
               design for 4000+ participants. Built comprehensive registration system with
-              form validation, multiple event categories, and real-time feedback to
-              streamline community marathon sign-ups and participant management. Created an
-              admin dashboard with secure authentication, participant management, bulk
-              upload capabilities, and analytics for efficient event coordination by
-              organizers.
+              form validation and an admin dashboard.
             </p>
-            <p
-              style={{
-                fontSize: "20px",
-                display: "inline-block",
-                marginRight: "20px",
-                marginLeft: "5px",
-                textDecoration: "underline",
-              }}
-            >
-              <FaGithub />{" "}
-              <a href="https://github.com/rajeshnambi1122/tatasocialnature">Code</a>
-            </p>
-            <p
-              style={{
-                display: "inline-block",
-                fontSize: "20px",
-                textDecoration: "underline",
-              }}
-            >
-              <GoLinkExternal />
-              <a href="https://www.sanct.in/">Live</a>
-            </p>
+            <div className="project-links">
+              <a href="https://github.com/rajeshnambi1122/tatasocialnature" className="project-link" target="_blank" rel="noopener noreferrer">
+                <FaGithub /> Code
+              </a>
+              <a href="https://www.sanct.in/" className="project-link" target="_blank" rel="noopener noreferrer">
+                <GoLinkExternal /> Live
+              </a>
+            </div>
           </div>
         </Carousel>
       </div>
