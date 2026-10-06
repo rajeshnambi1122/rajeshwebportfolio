@@ -87,7 +87,7 @@ const Heatmap = () => {
           <FaGithub style={{ fontSize: "2.2rem", color: "#24292e" }} />
           <h2
             style={{
-              fontSize: "1.8rem",
+              fontSize: "1.4rem",
               color: "#24292e",
               margin: 0,
               fontWeight: "700",

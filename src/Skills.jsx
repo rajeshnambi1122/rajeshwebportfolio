@@ -9,7 +9,8 @@ import {
   FaGitAlt,
   FaNpm,
   FaAws,
-  FaDocker
+  FaDocker,
+  FaJava
 } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
 import {
@@ -24,10 +25,11 @@ import {
   SiGooglesearchconsole,
   SiGoogleads,
   SiMeta,
-  SiGoogleanalytics
+  SiGoogleanalytics,
+  SiNextdotjs
 } from "react-icons/si";
 import { VscVscode, VscAzure } from "react-icons/vsc";
-import { TbSeo } from "react-icons/tb";
+import { TbSeo, TbBrandReactNative } from "react-icons/tb";
 
 const skillCategories = [
   {
@@ -38,6 +40,8 @@ const skillCategories = [
       { icon: FaJs, name: "JavaScript", color: "#F7DF1E" },
       { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
       { icon: FaReact, name: "React", color: "#61DAFB" },
+      { icon: SiNextdotjs, name: "Next.js", color: "#000000" },
+      { icon: TbBrandReactNative, name: "React Native", color: "#61DAFB" },
       { icon: SiRedux, name: "Redux", color: "#764ABC" },
       { icon: SiVite, name: "Vite", color: "#646CFF" },
       { icon: SiTailwindcss, name: "Tailwind", color: "#06B6D4" },
@@ -49,6 +53,7 @@ const skillCategories = [
       { icon: FaNodeJs, name: "Node.js", color: "#339933" },
       { icon: SiExpress, name: "Express", color: "#828282" },
       { icon: FaPython, name: "Python", color: "#3776AB" },
+      { icon: FaJava, name: "Java", color: "#007396" },
       { icon: SiMysql, name: "MySQL", color: "#4479A1" },
       { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
       { icon: FaAws, name: "AWS", color: "#FF9900" },
